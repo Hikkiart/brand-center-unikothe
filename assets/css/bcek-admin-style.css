@@ -1,0 +1,129 @@
+/* assets/css/bcek-admin-style.css */
+.bcek-admin-wrap {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.bcek-admin-wrap h1, .bcek-admin-wrap h2 {
+    color: #2c3e50; /* Azul escuro */
+}
+
+.bcek-admin-wrap .button-primary {
+    background-color: #3498db; /* Azul */
+    border-color: #2980b9;
+    box-shadow: 0 1px 0 #2980b9;
+    /* text-shadow: 0 -1px 1px #2980b9, 1px 0 1px #2980b9, 0 1px 1px #2980b9, -1px 0 1px #2980b9; */ /* Removido por ser muito forte */
+}
+.bcek-admin-wrap .button-primary:hover,
+.bcek-admin-wrap .button-primary:focus {
+    background-color: #2980b9;
+    border-color: #1f6392;
+}
+
+.bcek-admin-wrap .page-title-action {
+    background-color: #3498db;
+    border-color: #2980b9;
+    color: white;
+}
+.bcek-admin-wrap .page-title-action:hover,
+.bcek-admin-wrap .page-title-action:focus {
+    background-color: #2980b9;
+    color: white;
+}
+
+.bcek-field-item {
+    background-color: #ffffff; /* Branco para contraste com fundo da área de preview */
+    border: 1px solid #ccd0d4; /* Cinza padrão do WordPress */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.bcek-field-item h4 {
+    margin-top: 0;
+    color: #1d2327; /* Cor de título padrão WP */
+    border-bottom: 1px solid #e5e5e5; /* Cinza bem claro */
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.bcek-field-item .form-table th {
+    width: 220px; /* Ajustado para mais espaço */
+    padding-right: 20px;
+    font-weight: 600;
+}
+.bcek-field-item .form-table td input[type="number"].small-text {
+    width: 70px;
+}
+.bcek-field-item .form-table td textarea.large-text {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Adicionar @font-face para Montserrat se não estiver globalmente disponível no admin */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400; /* normal */
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700; /* bold */
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Black.ttf') format('truetype');
+    font-weight: 900; /* Black */
+    font-style: normal;
+}
+
+/* Estilos para a área de preview no Admin */
+#bcek-admin-preview-area {
+    background-color: #f0f0f1; /* Cinza claro do WP */
+    padding: 20px;
+    border: 1px solid #ccd0d4; /* Borda padrão WP */
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+    border-radius: 3px;
+    margin-top: 2px; /* Alinhamento com tabelas de formulário */
+}
+
+#bcek-admin-preview-area h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #1d2327;
+}
+
+#bcek-admin-canvas-container {
+    max-width: 100%;
+    margin-bottom: 10px;
+    background-color: #ffffff; /* Fundo branco para o canvas */
+    border: 1px solid #949494; /* Borda mais escura para destacar */
+    /* A altura será definida pela imagem base e JS */
+    overflow: hidden; /* Garante que a imagem/canvas não estoure */
+    min-height: 150px; /* Altura mínima se não houver imagem */
+    display: flex; /* Para centralizar placeholder se não houver imagem */
+    align-items: center;
+    justify-content: center;
+}
+
+#bcek_admin_base_image_preview_img {
+    /* A opacidade já está inline, mas poderia ser aqui */
+    /* opacity: 0.7; */
+    /* border: 1px solid #ddd; */ /* Removido pois o container tem borda */
+    display: block; /* Essencial para cálculo correto de dimensões */
+    max-width: 100%; /* Garante que a imagem não exceda o container */
+    height: auto; /* Mantém proporção */
+}
+
+#bcek_admin_fields_preview_canvas {
+    /* Já posicionado absolutamente via HTML inline */
+    /* border: 1px dotted blue; */ /* Apenas para debug, pode remover */
+}
+
+.bcek-field-item .wp-picker-container .wp-color-result.button {
+    margin-bottom: 0; /* Ajuste para alinhamento do color picker */
+}

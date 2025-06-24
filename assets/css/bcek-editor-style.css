@@ -1,0 +1,178 @@
+/* assets/css/bcek-editor-style.css */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal; /* 400 */
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold; /* 700 */
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Black.ttf') format('truetype');
+    font-weight: 900; /* Black */
+    font-style: normal;
+}
+
+.bcek-editor-wrapper {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #f4f6f8; /* Cinza muito claro */
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0; /* Cinza claro */
+}
+
+.bcek-preview-area {
+    flex: 2; /* Ocupa mais espaço */
+    min-width: 300px; /* Largura mínima para preview */
+    background-color: #ffffff;
+    border: 1px solid #bdc3c7; /* Cinza */
+    border-radius: 4px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Garante que a imagem não estoure */
+    
+    /* CORREÇÃO: Torna a área de preview "pegajosa" no topo da página */
+    position: -webkit-sticky; /* Para compatibilidade com Safari */
+    position: sticky;
+    top: 35px; /* Espaço em relação ao topo (considerando a barra de admin do WP) */
+    align-self: flex-start; /* Garante que ele cole no topo do seu contêiner flex */
+    max-height: 90vh; /* Evita que o preview seja maior que a tela */
+}
+
+#bcek-canvas-container {
+    /* Estilos para o container do canvas e imagem base */
+    /* A largura e altura serão ajustadas por JS para manter a proporção da imagem base */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+#bcek-base-image-preview {
+    display: block; /* Remove espaço extra abaixo da imagem */
+    max-width: 100%;
+    height: auto; /* Mantém proporção */
+    user-select: none; /* Evita seleção da imagem */
+}
+#bcek-text-overlay-canvas {
+    pointer-events: none; /* Permite interações com elementos abaixo, se houver */
+}
+
+
+.bcek-controls-area {
+    flex: 1; /* Ocupa menos espaço */
+    min-width: 280px; /* Largura mínima para controles */
+    background-color: #ffffff;
+    border: 1px solid #bdc3c7; /* Cinza */
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.bcek-controls-area h3 {
+    color: #2c3e50; /* Azul escuro */
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: bold; /* Montserrat Bold ou Black aqui seria bom */
+}
+
+.bcek-input-group {
+    margin-bottom: 15px;
+}
+
+.bcek-input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #34495e; /* Azul acinzentado */
+    font-size: 0.9em;
+    font-weight: bold; /* Montserrat Bold */
+}
+
+.bcek-input-group textarea,
+.bcek-input-group input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdc3c7; /* Cinza */
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    background-color: #ecf0f1; /* Cinza bem claro */
+    color: #2c3e50;
+}
+.bcek-input-group textarea:focus,
+.bcek-input-group input[type="text"]:focus {
+    border-color: #3498db; /* Azul */
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+
+.bcek-actions {
+    /* CORREÇÃO: Adiciona display flex para espaçar os botões */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Cria um espaço de 10px entre os botões e o spinner */
+}
+
+.bcek-actions button {
+    background-color: #3498db; /* Azul */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bcek-actions button.button-secondary {
+    background-color: #95a5a6; /* Cinza */
+}
+
+.bcek-actions button:hover {
+    background-color: #2980b9; /* Azul mais escuro */
+}
+.bcek-actions button.button-secondary:hover {
+    background-color: #7f8c8d; /* Cinza mais escuro */
+}
+
+
+#bcek-result-area a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #2ecc71; /* Verde */
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: bold;
+}
+#bcek-result-area a:hover {
+    background-color: #27ae60; /* Verde mais escuro */
+}
+
+#bcek-loader img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .bcek-editor-wrapper {
+        flex-direction: column;
+    }
+    .bcek-preview-area, .bcek-controls-area {
+        flex: none; /* Remove flex sizing */
+        width: 100%;
+        position: static; /* Remove a posição sticky em telas pequenas */
+    }
+}
