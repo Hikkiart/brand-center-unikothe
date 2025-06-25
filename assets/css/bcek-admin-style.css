@@ -11,7 +11,6 @@
     background-color: #3498db; /* Azul */
     border-color: #2980b9;
     box-shadow: 0 1px 0 #2980b9;
-    /* text-shadow: 0 -1px 1px #2980b9, 1px 0 1px #2980b9, 0 1px 1px #2980b9, -1px 0 1px #2980b9; */ /* Removido por ser muito forte */
 }
 .bcek-admin-wrap .button-primary:hover,
 .bcek-admin-wrap .button-primary:focus {
@@ -31,25 +30,32 @@
 }
 
 .bcek-field-item {
-    background-color: #ffffff; /* Branco para contraste com fundo da área de preview */
-    border: 1px solid #ccd0d4; /* Cinza padrão do WordPress */
+    background-color: #ffffff;
+    border: 1px solid #ccd0d4;
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 3px;
     box-shadow: 0 1px 1px rgba(0,0,0,.04);
 }
 
+/* NOVO: Estilo para o campo selecionado */
+.bcek-field-item.is-selected {
+    border-left: 4px solid #3498db;
+    box-shadow: 0 2px 4px rgba(0,0,0,.08);
+}
+
+
 .bcek-field-item h4 {
     margin-top: 0;
-    color: #1d2327; /* Cor de título padrão WP */
-    border-bottom: 1px solid #e5e5e5; /* Cinza bem claro */
+    color: #1d2327;
+    border-bottom: 1px solid #e5e5e5;
     padding-bottom: 10px;
     margin-bottom: 15px;
     font-size: 1.1em;
 }
 
 .bcek-field-item .form-table th {
-    width: 220px; /* Ajustado para mais espaço */
+    width: 220px;
     padding-right: 20px;
     font-weight: 600;
 }
@@ -61,34 +67,32 @@
     max-width: 400px;
 }
 
-/* Adicionar @font-face para Montserrat se não estiver globalmente disponível no admin */
 @font-face {
     font-family: 'Montserrat';
     src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
-    font-weight: 400; /* normal */
+    font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: 'Montserrat';
     src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
-    font-weight: 700; /* bold */
+    font-weight: 700;
     font-style: normal;
 }
 @font-face {
     font-family: 'Montserrat';
     src: url('../fonts/Montserrat-Black.ttf') format('truetype');
-    font-weight: 900; /* Black */
+    font-weight: 900;
     font-style: normal;
 }
 
-/* Estilos para a área de preview no Admin */
 #bcek-admin-preview-area {
-    background-color: #f0f0f1; /* Cinza claro do WP */
+    background-color: #f0f0f1;
     padding: 20px;
-    border: 1px solid #ccd0d4; /* Borda padrão WP */
+    border: 1px solid #ccd0d4;
     box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
     border-radius: 3px;
-    margin-top: 2px; /* Alinhamento com tabelas de formulário */
+    margin-top: 2px;
 }
 
 #bcek-admin-preview-area h3 {
@@ -100,30 +104,55 @@
 #bcek-admin-canvas-container {
     max-width: 100%;
     margin-bottom: 10px;
-    background-color: #ffffff; /* Fundo branco para o canvas */
-    border: 1px solid #949494; /* Borda mais escura para destacar */
-    /* A altura será definida pela imagem base e JS */
-    overflow: hidden; /* Garante que a imagem/canvas não estoure */
-    min-height: 150px; /* Altura mínima se não houver imagem */
-    display: flex; /* Para centralizar placeholder se não houver imagem */
+    background-color: #ffffff;
+    border: 1px solid #949494;
+    overflow: hidden;
+    min-height: 150px;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #bcek_admin_base_image_preview_img {
-    /* A opacidade já está inline, mas poderia ser aqui */
-    /* opacity: 0.7; */
-    /* border: 1px solid #ddd; */ /* Removido pois o container tem borda */
-    display: block; /* Essencial para cálculo correto de dimensões */
-    max-width: 100%; /* Garante que a imagem não exceda o container */
-    height: auto; /* Mantém proporção */
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
-#bcek_admin_fields_preview_canvas {
-    /* Já posicionado absolutamente via HTML inline */
-    /* border: 1px dotted blue; */ /* Apenas para debug, pode remover */
+#bcek_admin_fields_preview_canvas, #bcek-admin-interactive-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* NOVO: Estilos para os elementos interativos */
+.bcek-interactive-handle {
+    position: absolute;
+    border: 2px dotted rgba(255, 107, 107, 0.9); /* Vermelho pontilhado */
+    background: rgba(255, 107, 107, 0.1);
+    box-sizing: border-box;
+    cursor: move;
+    transition: all 0.2s ease-in-out;
+}
+
+.bcek-interactive-handle.selected {
+    border-style: solid;
+    border-color: #007cba; /* Azul sólido quando selecionado */
+    background: rgba(0, 124, 186, 0.2);
+    z-index: 20; /* Traz o handle selecionado para a frente */
+}
+
+.bcek-interactive-handle[data-field-type="image"] {
+    border-color: rgba(52, 152, 219, 0.9); /* Azul para imagens */
+    background: rgba(52, 152, 219, 0.1);
+}
+.bcek-interactive-handle[data-field-type="image"].selected {
+    border-color: #e67e22; /* Laranja para imagem selecionada */
+    background: rgba(230, 126, 34, 0.2);
 }
 
 .bcek-field-item .wp-picker-container .wp-color-result.button {
-    margin-bottom: 0; /* Ajuste para alinhamento do color picker */
+    margin-bottom: 0;
 }

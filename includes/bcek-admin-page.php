@@ -9,9 +9,7 @@ if ( ! defined( 'WPINC' ) ) {
     die;
 }
 
-/**
- * Renderiza a página principal do dashboard do plugin.
- */
+// ... (as funções bcek_render_admin_dashboard_page e bcek_render_admin_templates_page permanecem inalteradas) ...
 function bcek_render_admin_dashboard_page() {
     ?>
     <div class="wrap bcek-admin-wrap">
@@ -29,9 +27,6 @@ function bcek_render_admin_dashboard_page() {
     <?php
 }
 
-/**
- * Renderiza a página de listagem de templates.
- */
 function bcek_render_admin_templates_page() {
     if ( isset( $_GET['action'], $_GET['template_id'], $_GET['_wpnonce'] ) && 
          $_GET['action'] === 'delete' && 
@@ -104,6 +99,7 @@ function bcek_render_admin_templates_page() {
     <?php
 }
 
+
 /**
  * Renderiza a página para adicionar um novo template ou editar um existente.
  */
@@ -157,17 +153,10 @@ function bcek_render_admin_add_edit_template_page() {
                     if ($field_data['field_type'] === 'text') {
                         $field_data['container_shape'] = 'rectangle';
                         $field_data['z_index_order'] = 0;
-                        // Garante valores mínimos válidos
                         $field_data['font_size'] = max(1, intval($field_data['font_size']));
                         $field_data['line_height_multiplier'] = max(0.5, floatval($field_data['line_height_multiplier']));
                     } elseif ($field_data['field_type'] === 'image') {
-                        $field_data['font_family'] = null;
-                        $field_data['font_size'] = null;
-                        $field_data['font_color'] = null;
-                        $field_data['alignment'] = null;
-                        $field_data['line_height_multiplier'] = null;
-                        $field_data['default_text'] = null;
-                        // Garante container_shape e z_index_order válidos
+                        $field_data['font_family'] = null; $field_data['font_size'] = null; $field_data['font_color'] = null; $field_data['alignment'] = null; $field_data['line_height_multiplier'] = null; $field_data['default_text'] = null;
                         $field_data['container_shape'] = !empty($field_data['container_shape']) ? $field_data['container_shape'] : 'rectangle';
                         $field_data['z_index_order'] = isset($field_data['z_index_order']) ? intval($field_data['z_index_order']) : 0;
                     }
@@ -223,7 +212,16 @@ function bcek_render_admin_add_edit_template_page() {
                     </div>
                     <button type="button" class="button" id="bcek_add_field_button"><?php _e( 'Adicionar Novo Campo', 'bcek' ); ?></button>
                 </div>
-                <div id="bcek-admin-preview-area" style="flex: 1; min-width: 350px; position: sticky; top: 50px; background-color: #f8f9fa; padding:15px; border: 1px solid #ddd;"><h3><?php _e('Preview do Template', 'bcek'); ?></h3><div id="bcek-admin-canvas-container" style="position: relative; border: 1px dashed #ccc; background-color: #fff; min-height: 200px; overflow: hidden;"><img id="bcek_admin_base_image_preview_img" src="<?php echo esc_url( $template_data->base_image_url ?? '' ); ?>" style="max-width: 100%; display: block; opacity: 0.7;"><canvas id="bcek_admin_fields_preview_canvas" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%;"></canvas></div><p class="description" style="margin-top:10px;"><?php _e('Os campos configurados aparecerão aqui.', 'bcek'); ?></p></div>
+                <div id="bcek-admin-preview-area" style="flex: 1; min-width: 350px; position: sticky; top: 50px; background-color: #f8f9fa; padding:15px; border: 1px solid #ddd;">
+                    <h3><?php _e('Preview do Template', 'bcek'); ?></h3>
+                    <p class="description" style="margin-top:0; margin-bottom: 5px;"><?php _e('Arraste e redimensione os campos diretamente no preview.', 'bcek'); ?></p>
+                    <div id="bcek-admin-canvas-container" style="position: relative; border: 1px dashed #ccc; background-color: #fff; min-height: 200px; overflow: hidden; touch-action: none;">
+                        <img id="bcek_admin_base_image_preview_img" src="<?php echo esc_url( $template_data->base_image_url ?? '' ); ?>" style="max-width: 100%; display: block; opacity: 0.7;">
+                        <canvas id="bcek_admin_fields_preview_canvas" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%;"></canvas>
+                        <!-- NOVO: Contêiner para os elementos interativos -->
+                        <div id="bcek-admin-interactive-overlay" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 10;"></div>
+                    </div>
+                </div>
             </div>
             <p class="submit" style="clear: both; padding-top: 20px;"><input type="submit" name="submit" id="submit" class="button button-primary" value="<?php echo $is_editing ? __( 'Salvar Alterações', 'bcek' ) : __( 'Criar Template', 'bcek' ); ?>"><?php if ($is_editing): ?><a href="<?php echo admin_url('admin.php?page=brand-center-kothe-templates'); ?>" class="button" style="margin-left: 10px;"><?php _e( 'Cancelar', 'bcek' ); ?></a><?php endif; ?></p>
             <!-- TEMPLATE PARA NOVO CAMPO -->
@@ -234,6 +232,8 @@ function bcek_render_admin_add_edit_template_page() {
             </script>
         </form>
     </div>
+    <!-- NOVO: Carrega a biblioteca interact.js -->
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
     <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -302,26 +302,18 @@ function bcek_render_field_template( $index, $font_options, $alignment_options, 
                     <input type="number" name="bcek_fields[<?php echo esc_attr($field_real_index); ?>][height]" value="<?php echo esc_attr( $field_data->height ?? 50 ); ?>" class="small-text bcek-preview-input"> px
                 </td>
             </tr>
-            <?php if ($current_field_type === 'text') : ?>
-            <tbody class="bcek-text-fields">
+            <tbody class="bcek-text-fields" style="display: <?php echo $current_field_type === 'text' ? 'table-row-group' : 'none'; ?>;">
                 <tr><th><?php _e( 'Fonte', 'bcek' ); ?></th><td><select name="bcek_fields[<?php echo esc_attr($field_real_index); ?>][font_family]" class="bcek-preview-input"><?php foreach ( $font_options as $value => $label ) : ?><option value="<?php echo esc_attr( $value ); ?>" <?php selected( ($field_data->font_family ?? 'Montserrat-Regular'), $value ); ?>><?php echo esc_html( $label ); ?></option><?php endforeach; ?></select></td></tr>
                 <tr>
                     <th><?php _e( 'Tamanho da Fonte (px)', 'bcek' ); ?></th>
                     <td>
-                        <input type="number" 
-                               name="bcek_fields[<?php echo esc_attr($field_real_index); ?>][font_size]" 
-                               value="<?php echo esc_attr(max(1, $field_data->font_size ?? 16)); ?>" 
-                               class="small-text bcek-preview-input" min="1">
+                        <input type="number" name="bcek_fields[<?php echo esc_attr($field_real_index); ?>][font_size]" value="<?php echo esc_attr(max(1, $field_data->font_size ?? 16)); ?>" class="small-text bcek-preview-input" min="1">
                     </td>
                 </tr>
                 <tr>
                     <th><?php _e( 'Espaçamento entre Linhas', 'bcek' ); ?></th>
                     <td>
-                        <input type="number" 
-                               step="0.1" min="0.5" max="5"
-                               name="bcek_fields[<?php echo esc_attr($field_real_index); ?>][line_height_multiplier]"
-                               value="<?php echo esc_attr(max(0.5, $field_data->line_height_multiplier ?? $default_line_height)); ?>" 
-                               class="small-text bcek-preview-input">
+                        <input type="number" step="0.1" min="0.5" max="5" name="bcek_fields[<?php echo esc_attr($field_real_index); ?>][line_height_multiplier]" value="<?php echo esc_attr(max(0.5, $field_data->line_height_multiplier ?? $default_line_height)); ?>" class="small-text bcek-preview-input">
                         <p class="description"><?php _e('Ex: 1.0 para normal, 1.3 para padrão.', 'bcek'); ?></p>
                     </td>
                 </tr>
@@ -329,9 +321,7 @@ function bcek_render_field_template( $index, $font_options, $alignment_options, 
                 <tr><th><?php _e( 'Alinhamento', 'bcek' ); ?></th><td><select name="bcek_fields[<?php echo esc_attr($field_real_index); ?>][alignment]" class="bcek-preview-input"><?php foreach ( $alignment_options as $value => $label ) : ?><option value="<?php echo esc_attr( $value ); ?>" <?php selected( ($field_data->alignment ?? 'left'), $value ); ?>><?php echo esc_html( $label ); ?></option><?php endforeach; ?></select></td></tr>
                 <tr><th><?php _e( 'Texto Padrão', 'bcek' ); ?></th><td><textarea name="bcek_fields[<?php echo esc_attr($field_real_index); ?>][default_text]" rows="3" class="large-text bcek-preview-input"><?php echo esc_textarea( $field_data->default_text ?? '' ); ?></textarea></td></tr>
             </tbody>
-            <?php endif; ?>
-            <?php if ($current_field_type === 'image') : ?>
-            <tbody class="bcek-image-fields">
+            <tbody class="bcek-image-fields" style="display: <?php echo $current_field_type === 'image' ? 'table-row-group' : 'none'; ?>;">
                 <tr>
                     <th><?php _e( 'Formato do Contêiner', 'bcek' ); ?></th>
                     <td>
@@ -354,7 +344,6 @@ function bcek_render_field_template( $index, $font_options, $alignment_options, 
                     </td>
                 </tr>
             </tbody>
-            <?php endif; ?>
         </table>
         <hr style="border-style: dashed; border-color: #ddd; margin-top: 15px;">
     </div>
