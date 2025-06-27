@@ -5,10 +5,13 @@ if ( ! defined( 'WPINC' ) ) {
 
 /**
  * Insere ou atualiza um template no banco de dados.
+ * VERSÃO RESTAURADA para corresponder ao seu código funcional.
  */
 function bcek_db_insert_update_template( $data, $template_id = null ) {
     global $wpdb;
     $table_name = $wpdb->prefix . 'bcek_templates';
+    
+    // Usa a sua lógica original, sem o campo de debug.
     $defaults = array( 'name' => '', 'base_image_id' => 0, 'base_image_url' => '' );
     $data = wp_parse_args( $data, $defaults );
     $data['name'] = sanitize_text_field($data['name']);
@@ -66,26 +69,13 @@ function bcek_db_insert_update_field( $data, $field_id = null ) {
     
     $table_name = $wpdb->prefix . 'bcek_fields';
     $defaults = array(
-        'template_id' => 0, 'pos_x' => 0, 'pos_y' => 0, 'width' => 100, 'height' => 50,
+        'template_id' => 0, 'field_type' => 'text', 'pos_x' => 0, 'pos_y' => 0, 'width' => 100, 'height' => 50,
         'font_family' => 'Montserrat-Regular', 'font_size' => 16, 'font_color' => '#000000',
         'alignment' => 'left', 'line_height_multiplier' => 1.3, 'default_text' => '',
         'container_shape' => 'rectangle', 'z_index_order' => 0,
-        'field_order' => 0 // <- Adiciona suporte ao order
+        'field_order' => 0
     );
     $data = wp_parse_args( $data, $defaults );
-
-    $data['template_id'] = intval($data['template_id']);
-    $data['pos_x'] = intval($data['pos_x']); $data['pos_y'] = intval($data['pos_y']);
-    $data['width'] = intval($data['width']); $data['height'] = intval($data['height']);
-    $data['font_family'] = sanitize_text_field($data['font_family']);
-    $data['font_size'] = intval($data['font_size']);
-    $data['font_color'] = sanitize_hex_color($data['font_color']);
-    $data['alignment'] = sanitize_text_field($data['alignment']);
-    $data['line_height_multiplier'] = floatval($data['line_height_multiplier']);
-    $data['default_text'] = sanitize_textarea_field($data['default_text']);
-    $data['container_shape'] = sanitize_text_field($data['container_shape']);
-    $data['z_index_order'] = intval($data['z_index_order']);
-    $data['field_order'] = isset($data['field_order']) ? intval($data['field_order']) : 0;
 
     if (empty($data['template_id'])) {
         error_log("BCEK DB DEBUG: ERRO FATAL - Tentativa de salvar campo com template_id inválido ou zero.");
@@ -110,7 +100,6 @@ function bcek_db_insert_update_field( $data, $field_id = null ) {
 
 /**
  * Busca campos de um template específico.
- * Agora retorna ordenado pelo field_order (para drag & drop).
  */
 function bcek_db_get_fields_for_template( $template_id ) {
     global $wpdb; $table_name = $wpdb->prefix . 'bcek_fields';
