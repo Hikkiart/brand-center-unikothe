@@ -1,129 +1,139 @@
 <?php
 /**
  * Plugin Name:       Brand Center Editor Kothe
- * Plugin URI:        # Insira o link para a página do plugin, se houver
- * Description:       Editor de peças visuais para a intranet Kothe, permitindo a criação de templates e personalização de textos para geração de imagens PNG.
- * Version:           1.0.4 // Versão atualizada para refletir a implementação do cropper
+ * Plugin URI:        #
+ * Description:       Editor de peças visuais para a intranet Kothe.
+ * Version:           1.5.0
  * Author:            Attila Martins
- * Author URI:        # Insira o link do autor, se houver
+ * Author URI:        #
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       bcek
  * Domain Path:       /languages
  */
 
-// Medida de segurança: Se este arquivo for chamado diretamente, aborte a execução.
 if ( ! defined( 'WPINC' ) ) {
     die;
 }
 
-// Define constantes globais do plugin para fácil acesso e manutenção
-define( 'BCEK_VERSION', '1.0.4' ); 
-define( 'BCEK_PLUGIN_DIR', plugin_dir_path( __FILE__ ) ); 
-define( 'BCEK_PLUGIN_URL', plugin_dir_url( __FILE__ ) );   
-define( 'BCEK_PLUGIN_FILE', __FILE__ );                   
+define( 'BCEK_VERSION', '2.5.9' );
+define( 'BCEK_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
+define( 'BCEK_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
+define( 'BCEK_PLUGIN_FILE', __FILE__ );
 
-// Inclui os arquivos PHP modulares que contêm as funcionalidades do plugin
-require_once BCEK_PLUGIN_DIR . 'includes/bcek-activation.php';       
-require_once BCEK_PLUGIN_DIR . 'includes/bcek-database.php';        
-require_once BCEK_PLUGIN_DIR . 'includes/bcek-admin-page.php';      
-require_once BCEK_PLUGIN_DIR . 'includes/bcek-ajax-handlers.php';   
-require_once BCEK_PLUGIN_DIR . 'includes/bcek-functions.php';       
-require_once BCEK_PLUGIN_DIR . 'includes/bcek-image-generator.php'; 
-require_once BCEK_PLUGIN_DIR . 'includes/bcek-shortcodes.php';      
+final class Brand_Center_Editor_Kothe {
 
-// Registra a função a ser executada na ativação do plugin
-register_activation_hook( BCEK_PLUGIN_FILE, 'bcek_activate_plugin' );
-// O WordPress procura por uninstall.php automaticamente na pasta do plugin ao desinstalar.
+    private static $instance = null;
 
-/**
- * Enfileira (carrega) scripts e estilos CSS para o painel de administração do plugin.
- *
- * @param string $hook_suffix O sufixo da página de admin atual, usado para carregar assets condicionalmente.
- */
-function bcek_admin_enqueue_scripts_styles( $hook_suffix ) {
-    $is_bcek_page = false;
-    // Verifica se a página atual do admin pertence a este plugin usando o hook_suffix
-    if (is_string($hook_suffix) && strpos($hook_suffix, 'brand-center-kothe') !== false) {
-        $is_bcek_page = true;
-    }
-    // Permite também para as slugs específicas das páginas do plugin (mais robusto)
-    if (isset($_GET['page']) && 
-        in_array($_GET['page'], ['brand-center-kothe-dashboard', 'brand-center-kothe-templates', 'brand-center-kothe-add-new'])) {
-        $is_bcek_page = true;
+    public static function get_instance() {
+        if ( is_null( self::$instance ) ) {
+            self::$instance = new self();
+        }
+        return self::$instance;
     }
 
-    if ( !$is_bcek_page ) {
-        return; // Não carrega os assets se não for uma página do plugin
+    private function __construct() {
+        $this->load_dependencies();
+        $this->instantiate_classes();
+        $this->add_hooks();
     }
 
-    // Enfileira o arquivo CSS principal para o admin do plugin
-    wp_enqueue_style( 
-        'bcek-admin-style', 
-        BCEK_PLUGIN_URL . 'assets/css/bcek-admin-style.css', 
-        array(), // Dependências (nenhuma neste caso)
-        BCEK_VERSION // Versão do arquivo (para controle de cache)
-    );
-
-    // Enfileira o estilo padrão do WordPress para o seletor de cores
-    wp_enqueue_style( 'wp-color-picker' ); 
+    private function load_dependencies() {
+        // --- A CORREÇÃO ESTÁ AQUI ---
+        // Garante que o ficheiro com a função de ativação seja carregado.
+        require_once BCEK_PLUGIN_DIR . 'includes/bcek-activation.php';
+        
+        require_once BCEK_PLUGIN_DIR . 'includes/bcek-debug.php';
+        require_once BCEK_PLUGIN_DIR . 'includes/bcek-functions.php';
+        require_once BCEK_PLUGIN_DIR . 'includes/bcek-admin-page.php';
+        require_once BCEK_PLUGIN_DIR . 'includes/class-bcek-database.php';
+        require_once BCEK_PLUGIN_DIR . 'includes/class-bcek-shortcodes.php';
+        require_once BCEK_PLUGIN_DIR . 'includes/class-bcek-ajax.php';
+        require_once BCEK_PLUGIN_DIR . 'includes/class-bcek-admin.php';
+        require_once BCEK_PLUGIN_DIR . 'includes/class-bcek-image-generator.php';
+        require_once BCEK_PLUGIN_DIR . 'includes/class-bcek-admin-ajax.php';
+    }
     
-    // Enfileira o arquivo JavaScript principal para o admin do plugin
-    wp_enqueue_script( 
-        'bcek-admin-script', 
-        BCEK_PLUGIN_URL . 'assets/js/bcek-admin-script.js', 
-        array( 'jquery', 'wp-color-picker' ), // Dependências: jQuery e o script do seletor de cores
-        BCEK_VERSION, 
-        true // Carrega o script no rodapé da página
-    );
+    private function instantiate_classes() {
+        new BCEK_Shortcodes();
+        new BCEK_Ajax();
+        new BCEK_Admin();
+        new BCEK_Admin_Ajax();
+    }
+
+    private function add_hooks() {
+        register_activation_hook( BCEK_PLUGIN_FILE, 'bcek_activate_plugin' );
+        
+        add_action( 'admin_menu', array( $this, 'add_admin_menu' ) );
+        add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_backend_scripts' ) );
+        add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_frontend_scripts' ) );
+    }
     
-    // Habilita o uploader de mídia do WordPress (usado para selecionar a imagem base do template)
-    wp_enqueue_media(); 
+    public function add_admin_menu() {
+        add_menu_page('Brand Center Kothe', 'Brand Center Kothe', 'manage_options', 'brand-center-kothe-dashboard', 'bcek_render_admin_dashboard_page', 'dashicons-art', 25);
+        add_submenu_page('brand-center-kothe-dashboard', 'Templates', 'Templates', 'manage_options', 'brand-center-kothe-templates', 'bcek_render_admin_templates_page');
+        add_submenu_page('brand-center-kothe-dashboard', 'Adicionar Novo Template', 'Adicionar Novo', 'manage_options', 'brand-center-kothe-add-new', 'bcek_render_admin_add_edit_template_page');
+    }
+
+    /**
+     * Carrega scripts apenas no back-end (wp-admin).
+     */
+    public function enqueue_backend_scripts( $hook_suffix ) {
+        if ( strpos( $hook_suffix, 'brand-center-kothe' ) !== false ) {
+            wp_enqueue_style( 'bcek-admin-style', BCEK_PLUGIN_URL . 'assets/css/bcek-admin-style.css', array(), BCEK_VERSION );
+        }
+    }
+
+    /**
+     * Carrega scripts no front-end do site.
+     */
+    public function enqueue_frontend_scripts() {
+        global $post;
+        if ( ! is_a( $post, 'WP_Post' ) ) return;
+
+        // --- CARREGA SCRIPTS PARA O EDITOR DE TEMPLATES ---
+        if ( isset($_GET['action']) && in_array($_GET['action'], ['edit', 'add_new']) ) {
+            // ... (toda a sua lógica para o editor, que está a funcionar, permanece igual)
+            wp_enqueue_media();
+            wp_enqueue_style( 'bcek-editor-style', BCEK_PLUGIN_URL . 'assets/css/bcek-editor-style.css', array(), BCEK_VERSION );
+            wp_enqueue_script( 'interactjs', 'https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js', array(), '1.10.17', true );
+            $js_dir = BCEK_PLUGIN_URL . 'assets/js/admin/';
+            $js_deps = array( 'jquery', 'interactjs' ); 
+            wp_enqueue_script( 'bcek-admin-state', $js_dir . 'state.js', $js_deps, BCEK_VERSION, true );
+            wp_enqueue_script( 'bcek-admin-ui', $js_dir . 'ui.js', array('bcek-admin-state'), BCEK_VERSION, true );
+            wp_enqueue_script( 'bcek-admin-interact', $js_dir . 'interact.js', array('bcek-admin-state', 'bcek-admin-ui'), BCEK_VERSION, true );
+            wp_enqueue_script( 'bcek-admin-events', $js_dir . 'events.js', array('bcek-admin-state', 'bcek-admin-ui'), BCEK_VERSION, true );
+            wp_enqueue_script( 'bcek-admin-main', $js_dir . 'main.js', array('bcek-admin-events', 'bcek-admin-interact'), BCEK_VERSION, true);
+            // ... (resto da sua lógica de wp_localize_script para o editor)
+            $template_id = isset($_GET['template_id']) ? intval($_GET['template_id']) : 0;
+            $template_data = $template_id > 0 ? BCEK_Database::get_template_by_id($template_id) : null;
+            $fields_data = $template_id > 0 ? BCEK_Database::get_fields_for_template($template_id) : array();
+            wp_localize_script('bcek-admin-main', 'bcek_admin_data', array(
+                'template' => $template_data,
+                'fields'   => $fields_data,
+                'ajax_url' => admin_url('admin-ajax.php'),
+                'nonce'    => wp_create_nonce('bcek_save_template_nonce')
+            ));
+        }
+
+        // --- DEBUG: VAMOS CARREGAR O SCRIPT DE EXCLUSÃO INCONDICIONALMENTE ---
+        error_log("BCEK DEBUG: A função enqueue_frontend_scripts foi executada. A tentar carregar bcek-admin-list.js...");
+
+        wp_enqueue_script(
+            'bcek-admin-list-script',
+            BCEK_PLUGIN_URL . 'assets/js/admin/bcek-admin-list.js',
+            array('jquery'),
+            BCEK_VERSION,
+            true
+        );
+        
+        // Fornece a URL do AJAX ao nosso script, essencial para o front-end
+        wp_localize_script(
+            'bcek-admin-list-script',
+            'bcek_list_params',
+            array( 'ajax_url' => admin_url('admin-ajax.php') )
+        );
+    }
 }
-add_action( 'admin_enqueue_scripts', 'bcek_admin_enqueue_scripts_styles' ); // Hook para enfileirar scripts no admin
 
-
-// ***** FUNÇÃO REMOVIDA *****
-// A função bcek_frontend_enqueue_scripts_styles foi removida daqui.
-// Toda a lógica de enfileiramento para o frontend foi movida para dentro do
-// shortcode handler em 'includes/bcek-shortcodes.php' para garantir que os scripts
-// e as suas dependências (como o Cropper.js) sejam carregados apenas quando necessário e na ordem correta.
-
-
-/**
- * Adiciona as páginas de administração do plugin ao menu lateral do WordPress.
- */
-function bcek_add_admin_menu() {
-    // Adiciona o item de menu principal
-    add_menu_page(
-        __( 'Brand Center Kothe', 'bcek' ), // Título da página
-        __( 'Brand Center Kothe', 'bcek' ), // Título do menu
-        'manage_options',                   // Capacidade necessária para ver este menu
-        'brand-center-kothe-dashboard',     // Slug do menu
-        'bcek_render_admin_dashboard_page', // Função que renderiza o conteúdo da página
-        'dashicons-art',                    // Ícone do menu
-        25                                  // Posição no menu
-    );
-
-    // Adiciona o submenu "Templates"
-    add_submenu_page(
-        'brand-center-kothe-dashboard',     // Slug da página pai
-        __( 'Templates', 'bcek' ),          // Título da página
-        __( 'Templates', 'bcek' ),          // Título do submenu
-        'manage_options',                   // Capacidade
-        'brand-center-kothe-templates',     // Slug deste submenu
-        'bcek_render_admin_templates_page'  // Função de callback
-    );
-
-    // Adiciona o submenu "Adicionar Novo" (para templates)
-     add_submenu_page(
-        'brand-center-kothe-dashboard',     // Slug da página pai
-        __( 'Adicionar Novo Template', 'bcek' ), // Título da página
-        __( 'Adicionar Novo', 'bcek' ),     // Título do submenu
-        'manage_options',                   // Capacidade
-        'brand-center-kothe-add-new',       // Slug deste submenu
-        'bcek_render_admin_add_edit_template_page' // Função de callback
-    );
-}
-add_action( 'admin_menu', 'bcek_add_admin_menu' ); // Hook para adicionar itens ao menu de administração
-?>
+Brand_Center_Editor_Kothe::get_instance();

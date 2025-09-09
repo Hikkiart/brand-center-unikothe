@@ -1,158 +1,32 @@
-/* assets/css/bcek-admin-style.css */
-.bcek-admin-wrap {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+/* Estilos para a nova interface de administração baseada em Tailwind */
+.bcek-admin-container {
+    font-family: 'Poppins', sans-serif; /* Garante que a fonte padrão seja carregada */
 }
 
-.bcek-admin-wrap h1, .bcek-admin-wrap h2 {
-    color: #2c3e50; /* Azul escuro */
-}
+.custom-scrollbar::-webkit-scrollbar { width: 6px; }
+.custom-scrollbar::-webkit-scrollbar-track { background: #f1f5f9; }
+.custom-scrollbar::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 10px; }
+.custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #64748b; }
 
-.bcek-admin-wrap .button-primary {
-    background-color: #3498db; /* Azul */
-    border-color: #2980b9;
-    box-shadow: 0 1px 0 #2980b9;
-}
-.bcek-admin-wrap .button-primary:hover,
-.bcek-admin-wrap .button-primary:focus {
-    background-color: #2980b9;
-    border-color: #1f6392;
-}
-
-.bcek-admin-wrap .page-title-action {
-    background-color: #3498db;
-    border-color: #2980b9;
-    color: white;
-}
-.bcek-admin-wrap .page-title-action:hover,
-.bcek-admin-wrap .page-title-action:focus {
-    background-color: #2980b9;
-    color: white;
-}
-
-.bcek-field-item {
-    background-color: #ffffff;
-    border: 1px solid #ccd0d4;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 3px;
-    box-shadow: 0 1px 1px rgba(0,0,0,.04);
-}
-
-/* NOVO: Estilo para o campo selecionado */
-.bcek-field-item.is-selected {
-    border-left: 4px solid #3498db;
-    box-shadow: 0 2px 4px rgba(0,0,0,.08);
-}
-
-
-.bcek-field-item h4 {
-    margin-top: 0;
-    color: #1d2327;
-    border-bottom: 1px solid #e5e5e5;
-    padding-bottom: 10px;
-    margin-bottom: 15px;
-    font-size: 1.1em;
-}
-
-.bcek-field-item .form-table th {
-    width: 220px;
-    padding-right: 20px;
-    font-weight: 600;
-}
-.bcek-field-item .form-table td input[type="number"].small-text {
-    width: 70px;
-}
-.bcek-field-item .form-table td textarea.large-text {
-    width: 100%;
-    max-width: 400px;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/Montserrat-Black.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-}
-
-#bcek-admin-preview-area {
-    background-color: #f0f0f1;
-    padding: 20px;
-    border: 1px solid #ccd0d4;
-    box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
-    border-radius: 3px;
-    margin-top: 2px;
-}
-
-#bcek-admin-preview-area h3 {
-    margin-top: 0;
-    font-size: 1.2em;
-    color: #1d2327;
-}
-
-#bcek-admin-canvas-container {
-    max-width: 100%;
-    margin-bottom: 10px;
-    background-color: #ffffff;
-    border: 1px solid #949494;
+.accordion-content {
+    max-height: 0;
     overflow: hidden;
-    min-height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    transition: max-height 0.3s ease-out;
 }
 
-#bcek_admin_base_image_preview_img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+.align-btn-group button.is-active {
+    background-color: #3B82F6;
+    color: white;
 }
 
-#bcek_admin_fields_preview_canvas, #bcek-admin-interactive-overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+.accordion-item.is-dragging {
+    opacity: 0.5;
+    background: #e0f2fe;
 }
 
-/* NOVO: Estilos para os elementos interativos */
-.bcek-interactive-handle {
-    position: absolute;
-    border: 2px dotted rgba(255, 107, 107, 0.9); /* Vermelho pontilhado */
-    background: rgba(255, 107, 107, 0.1);
-    box-sizing: border-box;
-    cursor: move;
-    transition: all 0.2s ease-in-out;
-}
-
-.bcek-interactive-handle.selected {
-    border-style: solid;
-    border-color: #007cba; /* Azul sólido quando selecionado */
-    background: rgba(0, 124, 186, 0.2);
-    z-index: 20; /* Traz o handle selecionado para a frente */
-}
-
-.bcek-interactive-handle[data-field-type="image"] {
-    border-color: rgba(52, 152, 219, 0.9); /* Azul para imagens */
-    background: rgba(52, 152, 219, 0.1);
-}
-.bcek-interactive-handle[data-field-type="image"].selected {
-    border-color: #e67e22; /* Laranja para imagem selecionada */
-    background: rgba(230, 126, 34, 0.2);
-}
-
-.bcek-field-item .wp-picker-container .wp-color-result.button {
-    margin-bottom: 0;
+/* Garante que o CSS do tema não interfira com a lista */
+.bcek-admin-container ul, .bcek-admin-container li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
