@@ -39,14 +39,15 @@ const BCEK_User_Events = {
     },
 
     handleFormInput(e) {
-        // Agora ouve tanto o input numérico como o slider
         if (e.target.matches('.bcek-dynamic-text-input, .bcek-dynamic-fontsize-input, .bcek-dynamic-fontsize-slider')) {
             
             // Sincroniza o slider e o input numérico
             if(e.target.matches('.bcek-dynamic-fontsize-input') || e.target.matches('.bcek-dynamic-fontsize-slider')) {
                 const group = e.target.closest('.bcek-input-group');
-                group.querySelector('.bcek-dynamic-fontsize-input').value = e.target.value;
-                group.querySelector('.bcek-dynamic-fontsize-slider').value = e.target.value;
+                if (group) {
+                    group.querySelector('.bcek-dynamic-fontsize-input').value = e.target.value;
+                    group.querySelector('.bcek-dynamic-fontsize-slider').value = e.target.value;
+                }
             }
 
             this.updateAllInputs();
