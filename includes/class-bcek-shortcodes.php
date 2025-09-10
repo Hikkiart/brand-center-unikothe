@@ -175,16 +175,23 @@ class BCEK_Shortcodes {
     /**
      * NOVO: Carrega os scripts e estilos para o editor do utilizador.
      */
-    private function enqueue_user_editor_assets() {
+     private function enqueue_user_editor_assets() {
         // Estilos
         wp_enqueue_style( 'bcek-tailwind', 'https://cdn.tailwindcss.com', array(), null );
         wp_enqueue_style( 'bcek-google-fonts', 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap', array(), null );
         wp_enqueue_style( 'cropper-style', 'https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css', array(), '1.5.12' );
         wp_enqueue_style( 'bcek-user-style', BCEK_PLUGIN_URL . 'assets/css/user/style.css', array( 'cropper-style' ), BCEK_VERSION );
         
-        // Scripts
-        wp_enqueue_script( 'cropper-script', 'https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js', array(), '1.5.12', true );
-        wp_enqueue_script( 'bcek-user-script', BCEK_PLUGIN_URL . 'assets/js/user/script.js', array( 'jquery', 'cropper-script' ), BCEK_VERSION, true );
+        // Scripts Modulares
+        $base_url = BCEK_PLUGIN_URL . 'assets/js/user/';
+        $deps = ['jquery', 'cropper-script'];
+
+        wp_enqueue_script('bcek-user-state', $base_url . 'state.js', $deps, BCEK_VERSION, true);
+        wp_enqueue_script('bcek-user-ui', $base_url . 'ui.js', ['bcek-user-state'], BCEK_VERSION, true);
+        wp_enqueue_script('bcek-user-ajax', $base_url . 'ajax.js', ['bcek-user-state'], BCEK_VERSION, true);
+        wp_enqueue_script('bcek-user-events', $base_url . 'events.js', ['bcek-user-ui', 'bcek-user-ajax'], BCEK_VERSION, true);
+        wp_enqueue_script('bcek-user-main', $base_url . 'main.js', ['bcek-user-events'], BCEK_VERSION, true);
     }
 
 }
+
