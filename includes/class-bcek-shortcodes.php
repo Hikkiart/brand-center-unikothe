@@ -118,22 +118,73 @@ class BCEK_Shortcodes {
      * Função de callback para o shortcode [brand_center_editor].
      * (Este método permanece inalterado)
      */
+    /**
+     * Função de callback para o shortcode [brand_center_editor].
+     * Decide se mostra a lista de templates ou o editor de um template específico.
+     */
     public function render_editor_shortcode( $atts ) {
-        $atts = shortcode_atts( array('template_id' => 0,), $atts, 'brand_center_editor' );
-        $template_id = intval( $atts['template_id'] );
-        if ( ! $template_id ) { return '<p>' . __( 'Erro: ID do template não fornecido ou inválido no shortcode.', 'bcek' ) . '</p>'; }
-        $template = BCEK_Database::get_template_by_id( $template_id );
-        if ( ! $template ) { return '<p>' . sprintf( __( 'Erro: Template com ID %d não encontrado.', 'bcek' ), $template_id ) . '</p>'; }
-        $fields = BCEK_Database::get_fields_for_template( $template_id );
-        wp_enqueue_style( 'cropper-style', 'https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css', array(), '1.5.12' );
-        wp_enqueue_style( 'bcek-editor-style', BCEK_PLUGIN_URL . 'assets/css/bcek-editor-style.css', array( 'cropper-style' ), BCEK_VERSION );
-        wp_enqueue_script( 'cropper-script', 'https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js', array(), '1.5.12', true );
-        wp_enqueue_script( 'bcek-editor-script', BCEK_PLUGIN_URL . 'assets/js/bcek-editor-script.js', array( 'jquery', 'cropper-script' ), BCEK_VERSION, true );
-        $editor_data = array('template' => $template, 'fields'   => $fields, 'nonce'    => wp_create_nonce( 'bcek_generate_image_nonce' ));
-        wp_localize_script( 'bcek-editor-script', 'bcek_data', $editor_data );
-        wp_localize_script( 'bcek-editor-script', 'bcek_editor_ajax', array('ajax_url'  => admin_url( 'admin-ajax.php' ), 'fonts_url' => BCEK_PLUGIN_URL . 'assets/fonts/'));
-        ob_start();
-        include BCEK_PLUGIN_DIR . 'templates/editor-interface.php';
-        return ob_get_clean();
+        // Verifica se um template_id foi passado via URL (ex: ?template_id=123)
+        $template_id = isset( $_GET['template_id'] ) ? intval( $_GET['template_id'] ) : 0;
+
+        // Se um ID foi passado, mostra o editor
+        if ( $template_id > 0 ) {
+            $template = BCEK_Database::get_template_by_id( $template_id );
+            if ( ! $template ) {
+                return '<p>' . sprintf( __( 'Erro: Template com ID %d não encontrado.', 'bcek' ), $template_id ) . '</p>';
+            }
+            $fields = BCEK_Database::get_fields_for_template( $template_id );
+
+            // Carrega os scripts e estilos para o editor do utilizador
+            $this->enqueue_user_editor_assets();
+            
+            // Passa os dados do template para o JavaScript
+            $editor_data = array(
+                'template' => $template, 
+                'fields'   => $fields, 
+                'nonce'    => wp_create_nonce( 'bcek_generate_image_nonce' ),
+                'ajax_url' => admin_url( 'admin-ajax.php' ),
+                'fonts_url' => BCEK_PLUGIN_URL . 'assets/fonts/'
+            );
+            wp_localize_script( 'bcek-user-script', 'bcek_data', $editor_data );
+
+            ob_start();
+            // Passamos as variáveis $template e $fields para o escopo do template
+            include BCEK_PLUGIN_DIR . 'templates/user/editor.php';
+            return ob_get_clean();
+
+        } else { // Caso contrário, mostra a lista de templates
+            $this->enqueue_user_list_assets();
+            $templates = BCEK_Database::get_all_templates();
+            
+            ob_start();
+            // Passamos a variável $templates para o escopo do template
+            include BCEK_PLUGIN_DIR . 'templates/user/list-templates.php';
+            return ob_get_clean();
+        }
     }
+
+    /**
+     * NOVO: Carrega os scripts e estilos para a lista de templates do utilizador.
+     */
+    private function enqueue_user_list_assets() {
+        wp_enqueue_style( 'bcek-tailwind', 'https://cdn.tailwindcss.com', array(), null );
+        wp_enqueue_style( 'bcek-google-fonts', 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap', array(), null );
+        wp_enqueue_style( 'bcek-user-style', BCEK_PLUGIN_URL . 'assets/css/user/style.css', array(), BCEK_VERSION );
+    }
+
+    /**
+     * NOVO: Carrega os scripts e estilos para o editor do utilizador.
+     */
+    private function enqueue_user_editor_assets() {
+        // Estilos
+        wp_enqueue_style( 'bcek-tailwind', 'https://cdn.tailwindcss.com', array(), null );
+        wp_enqueue_style( 'bcek-google-fonts', 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap', array(), null );
+        wp_enqueue_style( 'cropper-style', 'https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css', array(), '1.5.12' );
+        wp_enqueue_style( 'bcek-user-style', BCEK_PLUGIN_URL . 'assets/css/user/style.css', array( 'cropper-style' ), BCEK_VERSION );
+        
+        // Scripts
+        wp_enqueue_script( 'cropper-script', 'https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js', array(), '1.5.12', true );
+        wp_enqueue_script( 'bcek-user-script', BCEK_PLUGIN_URL . 'assets/js/user/script.js', array( 'jquery', 'cropper-script' ), BCEK_VERSION, true );
+    }
+
 }
