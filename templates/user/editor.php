@@ -42,10 +42,15 @@ $current_page_url = get_permalink();
                             
                             <?php else : // Campo de Texto ?>
                                 <textarea id="bcek_field_<?php echo esc_attr( $field->field_id ); ?>" class="bcek-dynamic-text-input w-full bg-white rounded-lg p-3 border border-gray-300 focus:ring-2 focus:ring-blue-500" rows="3"><?php echo esc_textarea( $field->default_text ?? '' ); ?></textarea>
-                                <div>
-                                    <label class="text-xs text-gray-600">Tamanho da fonte:</label>
-                                    <input type="number" class="bcek-dynamic-fontsize-input w-20 bg-white p-1 border border-gray-300 rounded-md text-sm" value="<?php echo esc_attr( $field->font_size ); ?>" min="8" max="200" />
+                                
+                                <div class="flex flex-col mt-2">
+                                    <div class="flex justify-between items-center">
+                                        <label class="text-xs text-gray-600">Tamanho da fonte:</label>
+                                        <input type="number" class="bcek-dynamic-fontsize-input w-20 bg-white p-1 border border-gray-300 rounded-md text-sm text-center" value="<?php echo esc_attr( $field->font_size ); ?>" min="8" max="200" />
+                                    </div>
+                                    <input type="range" class="bcek-dynamic-fontsize-slider w-full mt-1" value="<?php echo esc_attr( $field->font_size ); ?>" min="8" max="200">
                                 </div>
+
                             <?php endif; ?>
 
                         </div>
@@ -59,10 +64,10 @@ $current_page_url = get_permalink();
 
                 <div class="pt-4 border-t space-y-3">
                     <button type="button" class="bcek-generate-btn w-full bg-blue-500 text-white font-semibold py-3 px-5 rounded-lg hover:bg-blue-600 transition-colors" data-format="png">
-                        Gerar Imagem (PNG)
+                        <?php _e( 'Gerar Imagem (PNG)', 'bcek' ); ?>
                     </button>
                     <button type="button" class="bcek-generate-btn w-full bg-gray-600 text-white font-semibold py-3 px-5 rounded-lg hover:bg-gray-700 transition-colors" data-format="bmp">
-                        Gerar Imagem (BMP)
+                        <?php _e( 'Gerar Imagem (BMP)', 'bcek' ); ?>
                     </button>
                     <div id="bcek-loader" style="display:none;" class="text-center">Aguarde...</div>
                 </div>
