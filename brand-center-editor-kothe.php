@@ -88,52 +88,71 @@ final class Brand_Center_Editor_Kothe {
      * Carrega scripts no front-end do site.
      */
     public function enqueue_frontend_scripts() {
-        global $post;
-        if ( ! is_a( $post, 'WP_Post' ) ) return;
+    global $post;
 
-        // --- CARREGA SCRIPTS PARA O EDITOR DE TEMPLATES ---
-        if ( isset($_GET['action']) && in_array($_GET['action'], ['edit', 'add_new']) ) {
-            // ... (toda a sua lógica para o editor, que está a funcionar, permanece igual)
-            wp_enqueue_media();
-            wp_enqueue_style( 'bcek-editor-style', BCEK_PLUGIN_URL . 'assets/css/bcek-editor-style.css', array(), BCEK_VERSION );
-            wp_enqueue_script( 'interactjs', 'https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js', array(), '1.10.17', true );
-            $js_dir = BCEK_PLUGIN_URL . 'assets/js/admin/';
-            $js_deps = array( 'jquery', 'interactjs' ); 
-            wp_enqueue_script( 'bcek-admin-state', $js_dir . 'state.js', $js_deps, BCEK_VERSION, true );
-            wp_enqueue_script( 'bcek-admin-ui', $js_dir . 'ui.js', array('bcek-admin-state'), BCEK_VERSION, true );
-            wp_enqueue_script( 'bcek-admin-interact', $js_dir . 'interact.js', array('bcek-admin-state', 'bcek-admin-ui'), BCEK_VERSION, true );
-            wp_enqueue_script( 'bcek-admin-events', $js_dir . 'events.js', array('bcek-admin-state', 'bcek-admin-ui'), BCEK_VERSION, true );
-            wp_enqueue_script( 'bcek-admin-main', $js_dir . 'main.js', array('bcek-admin-events', 'bcek-admin-interact'), BCEK_VERSION, true);
-            // ... (resto da sua lógica de wp_localize_script para o editor)
-            $template_id = isset($_GET['template_id']) ? intval($_GET['template_id']) : 0;
-            $template_data = $template_id > 0 ? BCEK_Database::get_template_by_id($template_id) : null;
-            $fields_data = $template_id > 0 ? BCEK_Database::get_fields_for_template($template_id) : array();
-            wp_localize_script('bcek-admin-main', 'bcek_admin_data', array(
-                'template' => $template_data,
-                'fields'   => $fields_data,
+    // Garante que o $post é válido
+    if ( ! is_a( $post, 'WP_Post' ) ) {
+        return;
+    }
+
+    // --- LÓGICA PARA O EDITOR DO UTILIZADOR (quando ?template_id=... está na URL) ---
+    // Verifica se um template específico está a ser editado pelo utilizador
+    if ( isset( $_GET['template_id'] ) && is_numeric( $_GET['template_id'] ) && ! isset( $_GET['action'] ) ) {
+        $template_id = intval( $_GET['template_id'] );
+
+        // Vai buscar os dados do template e dos campos
+        $template = BCEK_Database::get_template_by_id( $template_id );
+        $fields = BCEK_Database::get_fields_for_template( $template_id );
+
+        // Se o template existir, carrega os scripts e os dados
+        if ( $template ) {
+            // Estilos
+            wp_enqueue_style( 'cropper-style', 'https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css', array(), '1.5.12' );
+            wp_enqueue_style( 'bcek-user-editor-style', BCEK_PLUGIN_URL . 'assets/css/bcek-editor-style.css', array( 'cropper-style' ), BCEK_VERSION );
+            
+            // Bibliotecas
+            wp_enqueue_script( 'cropper-script', 'https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js', array(), '1.5.12', true );
+            
+            // Scripts modulares do utilizador
+            $js_dir = BCEK_PLUGIN_URL . 'assets/js/user/';
+            $deps = ['jquery', 'cropper-script'];
+
+            wp_enqueue_script('bcek-user-state', $js_dir . 'state.js', $deps, BCEK_VERSION, true);
+            $deps[] = 'bcek-user-state';
+
+            wp_enqueue_script('bcek-user-ui', $js_dir . 'ui.js', $deps, BCEK_VERSION, true);
+            $deps[] = 'bcek-user-ui';
+            
+            wp_enqueue_script('bcek-user-events', $js_dir . 'events.js', $deps, BCEK_VERSION, true);
+            $deps[] = 'bcek-user-events';
+
+            wp_enqueue_script('bcek-user-main', $js_dir . 'main.js', $deps, BCEK_VERSION, true);
+            
+            // Passa os dados do PHP para o JavaScript (A PARTE CRÍTICA)
+            $editor_data = [
+                'template' => $template, 
+                'fields'   => $fields, 
+                'nonce'    => wp_create_nonce( 'bcek_generate_image_nonce' ),
                 'ajax_url' => admin_url('admin-ajax.php'),
-                'nonce'    => wp_create_nonce('bcek_save_template_nonce')
-            ));
+                'fonts_url' => BCEK_PLUGIN_URL . 'assets/fonts/'
+            ];
+            
+            wp_localize_script( 'bcek-user-main', 'bcek_data', $editor_data );
         }
+    }
 
-        // --- DEBUG: VAMOS CARREGAR O SCRIPT DE EXCLUSÃO INCONDICIONALMENTE ---
-        error_log("BCEK DEBUG: A função enqueue_frontend_scripts foi executada. A tentar carregar bcek-admin-list.js...");
+    // --- LÓGICA PARA A LISTA DE TEMPLATES DO UTILIZADOR ---
+    // Se a página contém o shortcode mas não há um template_id na URL
+    if ( has_shortcode( $post->post_content, 'brand_center_editor' ) && ! isset( $_GET['template_id'] ) ) {
+        wp_enqueue_style( 'bcek-user-list-style', BCEK_PLUGIN_URL . 'assets/css/bcek-user-style.css', array(), BCEK_VERSION );
+    }
 
-        wp_enqueue_script(
-            'bcek-admin-list-script',
-            BCEK_PLUGIN_URL . 'assets/js/admin/bcek-admin-list.js',
-            array('jquery'),
-            BCEK_VERSION,
-            true
-        );
-        
-        // Fornece a URL do AJAX ao nosso script, essencial para o front-end
-        wp_localize_script(
-            'bcek-admin-list-script',
-            'bcek_list_params',
-            array( 'ajax_url' => admin_url('admin-ajax.php') )
-        );
+    // --- LÓGICA PARA O ADMIN NO FRONT-END (já existente, não mexer) ---
+    if ( has_shortcode( $post->post_content, 'bcek_admin_interface' ) ) {
+        // Deixa a própria classe de shortcodes tratar disto, pois já está a funcionar
     }
 }
+}
+
 
 Brand_Center_Editor_Kothe::get_instance();
