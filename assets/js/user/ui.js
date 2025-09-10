@@ -64,12 +64,19 @@ const BCEK_User_UI = {
         const { ctx } = this.state.dom;
         const scale = this.state.scale;
 
+        // Sanitização e valores padrão
+        const safeFontSize = parseInt(fontSize, 10) || parseInt(field.font_size, 10) || 16;
+        const fontFamily = field.font_family || 'Montserrat';
+        const fontWeight = (field.font_weight || '400').replace('i', '');
+        const fontStyle = (field.font_weight || '400').includes('i') ? 'italic' : 'normal';
+        
         ctx.fillStyle = field.font_color || '#000000';
-        ctx.font = `${parseInt(fontSize, 10) * scale}px "${field.font_family}"`;
+        ctx.font = `${fontStyle} ${fontWeight} ${safeFontSize * scale}px "${fontFamily}"`;
         ctx.textAlign = field.alignment || 'left';
 
-        const lines = text.split('\n');
-        const lineHeight = (parseInt(fontSize, 10) * (parseFloat(field.line_height_multiplier) || 1.3)) * scale;
+        // Lógica de quebra de linha
+        const lines = this.getWrappedText(text, field.width * scale, ctx);
+        const lineHeight = (safeFontSize * (parseFloat(field.line_height_multiplier) || 1.3)) * scale;
         
         let startX = parseInt(field.pos_x, 10) * scale;
         if (ctx.textAlign === 'center') {
@@ -78,12 +85,35 @@ const BCEK_User_UI = {
             startX += parseInt(field.width, 10) * scale;
         }
 
-        let startY = (parseInt(field.pos_y, 10) + parseInt(fontSize, 10)) * scale; // Ajuste para a linha de base
+        // Ajuste vertical para alinhar o texto ao topo da caixa
+        let startY = (parseInt(field.pos_y, 10) * scale) + (safeFontSize * scale);
         
         lines.forEach(line => {
             ctx.fillText(line, startX, startY);
             startY += lineHeight;
         });
+    },
+
+    /**
+     * NOVO: Função auxiliar para quebrar o texto palavra por palavra.
+     */
+    getWrappedText(text, maxWidth, context) {
+        const words = text.split(' ');
+        let lines = [];
+        let currentLine = words[0] || '';
+
+        for (let i = 1; i < words.length; i++) {
+            const word = words[i];
+            const width = context.measureText(currentLine + " " + word).width;
+            if (width < maxWidth) {
+                currentLine += " " + word;
+            } else {
+                lines.push(currentLine);
+                currentLine = word;
+            }
+        }
+        lines.push(currentLine);
+        return lines;
     },
 
     showCropper(file, field) {
