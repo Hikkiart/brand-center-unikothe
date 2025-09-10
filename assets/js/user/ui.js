@@ -5,24 +5,39 @@ const BCEK_User_UI = {
     },
 
     /**
-     * Desenha todos os campos personalizados no canvas.
+     * NOVO E CORRIGIDO: Desenha todos os campos personalizados no canvas.
      */
     drawCanvas() {
         const { baseImg, canvas, ctx } = this.state.dom;
         if (!baseImg.complete || baseImg.naturalWidth === 0) return;
 
-        // Ajusta o tamanho do canvas para corresponder à imagem base renderizada
         canvas.width = baseImg.clientWidth;
         canvas.height = baseImg.clientHeight;
         this.state.scale = baseImg.clientWidth / baseImg.naturalWidth;
         
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+        // Desenha primeiro as imagens que ficam por baixo da imagem base
+        this.state.bcekData.fields
+            .filter(field => field.field_type === 'image' && parseInt(field.z_index_order, 10) === 0)
+            .forEach(field => {
+                const inputData = this.state.userInputs[field.field_id] || {};
+                if (inputData.imageDataUrl) {
+                    this.drawImage(field, inputData.imageDataUrl);
+                }
+            });
+
+        // Desenha a imagem base
+        ctx.drawImage(baseImg, 0, 0, canvas.width, canvas.height);
+
+        // Desenha os campos de texto e as imagens que ficam por cima
         this.state.bcekData.fields.forEach(field => {
             const inputData = this.state.userInputs[field.field_id] || {};
             
-            if (field.field_type === 'image' && inputData.imageDataUrl) {
-                this.drawImage(field, inputData.imageDataUrl);
+            if (field.field_type === 'image' && parseInt(field.z_index_order, 10) !== 0) {
+                 if (inputData.imageDataUrl) {
+                    this.drawImage(field, inputData.imageDataUrl);
+                }
             } else if (field.field_type === 'text') {
                 const text = inputData.text ?? field.default_text;
                 const fontSize = inputData.fontSize ?? field.font_size;
@@ -32,10 +47,10 @@ const BCEK_User_UI = {
     },
 
     /**
-     * Desenha uma imagem de utilizador no canvas.
+     * Desenha uma imagem de utilizador no canvas (sem alterações).
      */
     drawImage(field, imageUrl) {
-        const { ctx, baseImg } = this.state.dom;
+        const { ctx } = this.state.dom;
         const scale = this.state.scale;
 
         const img = new Image();
@@ -58,13 +73,12 @@ const BCEK_User_UI = {
     },
 
     /**
-     * Desenha um texto com quebra de linha no canvas.
+     * Lógica de desenho de texto refatorada e corrigida.
      */
     drawText(field, text, fontSize) {
         const { ctx } = this.state.dom;
         const scale = this.state.scale;
 
-        // Sanitização e valores padrão
         const safeFontSize = parseInt(fontSize, 10) || parseInt(field.font_size, 10) || 16;
         const fontFamily = field.font_family || 'Montserrat';
         const fontWeight = (field.font_weight || '400').replace('i', '');
@@ -73,11 +87,10 @@ const BCEK_User_UI = {
         ctx.fillStyle = field.font_color || '#000000';
         ctx.font = `${fontStyle} ${fontWeight} ${safeFontSize * scale}px "${fontFamily}"`;
         ctx.textAlign = field.alignment || 'left';
-
-        // Lógica de quebra de linha
+        
         const lines = this.getWrappedText(text, field.width * scale, ctx);
         const lineHeight = (safeFontSize * (parseFloat(field.line_height_multiplier) || 1.3)) * scale;
-        
+
         let startX = parseInt(field.pos_x, 10) * scale;
         if (ctx.textAlign === 'center') {
             startX += (parseInt(field.width, 10) / 2) * scale;
@@ -85,19 +98,24 @@ const BCEK_User_UI = {
             startX += parseInt(field.width, 10) * scale;
         }
 
-        // Ajuste vertical para alinhar o texto ao topo da caixa
-        let startY = (parseInt(field.pos_y, 10) * scale) + (safeFontSize * scale);
-        
-        lines.forEach(line => {
-            ctx.fillText(line, startX, startY);
-            startY += lineHeight;
-        });
+        // Correção crucial: A posição Y inicial deve ser a do topo do campo mais a altura da primeira linha.
+        // O `* 0.8` é um fator de ajuste empírico para alinhar melhor a baseline da fonte.
+        let startY = (parseInt(field.pos_y, 10) * scale) + (safeFontSize * scale * 0.8);
+
+        for (let i = 0; i < lines.length; i++) {
+            // Verifica se a próxima linha caberá na altura do campo
+            if ((startY + (i * lineHeight) - (parseInt(field.pos_y, 10) * scale)) > (parseInt(field.height, 10) * scale)) {
+                break;
+            }
+            ctx.fillText(lines[i], startX, startY + (i * lineHeight));
+        }
     },
 
     /**
-     * NOVO: Função auxiliar para quebrar o texto palavra por palavra.
+     * Função para quebrar o texto, similar à do painel de administração.
      */
     getWrappedText(text, maxWidth, context) {
+        if (!text) return [];
         const words = text.split(' ');
         let lines = [];
         let currentLine = words[0] || '';
@@ -116,6 +134,7 @@ const BCEK_User_UI = {
         return lines;
     },
 
+    // As funções showCropper, confirmCrop e cancelCrop permanecem iguais.
     showCropper(file, field) {
         this.state.currentCroppingField = field;
         const reader = new FileReader();
