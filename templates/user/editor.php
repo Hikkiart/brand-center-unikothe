@@ -1,6 +1,6 @@
 <?php
 /**
- * Template para a interface de edição do utilizador final (nova versão).
+ * Template para a interface de edição do utilizador final (versão corrigida).
  * As variáveis $template e $fields estão disponíveis aqui.
  */
 if ( ! defined( 'WPINC' ) ) { die; }
@@ -45,7 +45,7 @@ $current_page_url = get_permalink();
                                 
                                 <div class="flex flex-col mt-2">
                                     <div class="flex justify-between items-center">
-                                        <label class="text-xs text-gray-600">Tamanho da fonte:</label>
+                                        <label class="text-xs text-gray-600">Tamanho da fonte (px):</label>
                                         <input type="number" class="bcek-dynamic-fontsize-input w-20 bg-white p-1 border border-gray-300 rounded-md text-sm text-center" value="<?php echo esc_attr( $field->font_size ); ?>" min="8" max="200" />
                                     </div>
                                     <input type="range" class="bcek-dynamic-fontsize-slider w-full mt-1" value="<?php echo esc_attr( $field->font_size ); ?>" min="8" max="200">
