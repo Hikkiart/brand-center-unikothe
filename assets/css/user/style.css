@@ -1,0 +1,11 @@
+/* assets/css/user/style.css */
+.bcek-user-container {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+/* Estilos para o Modal do Cropper (Corte de Imagem) */
+#bcek-cropper-modal img {
+    max-width: 100%;
+}
