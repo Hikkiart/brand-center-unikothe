@@ -1,0 +1,4661 @@
+[2025-09-02 14:20:53] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 14:20:53] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 14:24:49] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 14:24:49] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 14:25:18] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 14:25:18] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 14:25:40] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 14:25:40] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 14:25:43] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 14:25:43] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 14:26:06] --- DADOS COMPLETOS RECEBIDOS VIA AJAX ---
+Array
+(
+    [action] => bcek_save_template_data
+    [nonce] => ff9b4ed45a
+    [template_id] => 0
+    [name] => Novo Template
+    [base_image_id] => 12564
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-40.png
+    [fields] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 0
+                    [name] => Campo 1
+                    [field_type] => text
+                    [pos_x] => 108
+                    [pos_y] => 480
+                    [width] => 200
+                    [height] => 50
+                    [font_family] => Montserrat
+                    [font_weight] => 700
+                    [font_size] => 20
+                    [font_color] => #000000
+                    [alignment] => center
+                    [default_text] => Novo Texto
+                    [z_index_order] => 1
+                )
+
+        )
+
+)
+
+
+[2025-09-02 14:26:06] --- DADOS DA IMAGEM BASE RECEBIDOS NO AJAX ---
+Array
+(
+    [base_image_id_recebido] => 12564
+    [base_image_url_recebida] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-40.png
+)
+
+
+[2025-09-02 14:26:06] --- DADOS DO TEMPLATE PRESTES A SEREM SALVOS ---
+Array
+(
+    [name] => Novo Template
+    [base_image_id] => 12564
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-40.png
+)
+
+
+[2025-09-02 14:26:21] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 14:26:21] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 14:26:54] --- DADOS COMPLETOS RECEBIDOS VIA AJAX ---
+Array
+(
+    [action] => bcek_save_template_data
+    [nonce] => ff9b4ed45a
+    [template_id] => 0
+    [name] => Novo Template
+    [base_image_id] => 12565
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-41.png
+    [fields] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 0
+                    [name] => Campo 1
+                    [field_type] => text
+                    [pos_x] => 104
+                    [pos_y] => 487
+                    [width] => 200
+                    [height] => 50
+                    [font_family] => Montserrat
+                    [font_weight] => 700
+                    [font_size] => 28
+                    [font_color] => #000000
+                    [alignment] => center
+                    [default_text] => Novo Texto
+                    [z_index_order] => 1
+                )
+
+        )
+
+)
+
+
+[2025-09-02 14:26:54] --- DADOS DA IMAGEM BASE RECEBIDOS NO AJAX ---
+Array
+(
+    [base_image_id_recebido] => 12565
+    [base_image_url_recebida] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-41.png
+)
+
+
+[2025-09-02 14:26:54] --- DADOS DO TEMPLATE PRESTES A SEREM SALVOS ---
+Array
+(
+    [name] => Novo Template
+    [base_image_id] => 12565
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-41.png
+)
+
+
+[2025-09-02 14:27:01] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 14:27:01] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 14:27:04] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 14:27:04] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 14:27:14] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 115
+    [name] => Novo Template
+    [base_image_id] => 12565
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-41.png
+    [created_at] => 2025-09-02 14:26:54
+)
+
+
+[2025-09-02 14:27:14] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 14:27:34] --- DADOS COMPLETOS RECEBIDOS VIA AJAX ---
+Array
+(
+    [action] => bcek_save_template_data
+    [nonce] => ff9b4ed45a
+    [template_id] => 115
+    [name] => Novo Template
+    [base_image_id] => 12565
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-41.png
+    [fields] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 0
+                    [name] => Campo 1
+                    [field_type] => text
+                    [pos_x] => 67
+                    [pos_y] => 1206
+                    [width] => 516
+                    [height] => 88
+                    [font_family] => Montserrat
+                    [font_weight] => 700
+                    [font_size] => 20
+                    [font_color] => #000000
+                    [alignment] => left
+                    [default_text] => Novo Texto
+                    [z_index_order] => 1
+                )
+
+        )
+
+)
+
+
+[2025-09-02 14:27:34] --- DADOS DA IMAGEM BASE RECEBIDOS NO AJAX ---
+Array
+(
+    [base_image_id_recebido] => 12565
+    [base_image_url_recebida] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-41.png
+)
+
+
+[2025-09-02 14:27:34] --- DADOS DO TEMPLATE PRESTES A SEREM SALVOS ---
+Array
+(
+    [name] => Novo Template
+    [base_image_id] => 12565
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-41.png
+)
+
+
+[2025-09-02 14:27:36] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 115
+    [name] => Novo Template
+    [base_image_id] => 12565
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-41.png
+    [created_at] => 2025-09-02 14:26:54
+)
+
+
+[2025-09-02 14:27:36] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 14:34:46] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 115
+    [name] => Novo Template
+    [base_image_id] => 12565
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-41.png
+    [created_at] => 2025-09-02 14:26:54
+)
+
+
+[2025-09-02 14:34:46] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 14:34:51] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 14:34:51] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 14:34:54] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 14:34:54] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 14:35:18] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 116
+    [name] => Novo Template
+    [base_image_id] => 12566
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-42.avif
+    [created_at] => 2025-09-02 14:35:16
+)
+
+
+[2025-09-02 14:35:18] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 183
+            [template_id] => 116
+            [pos_x] => 101
+            [pos_y] => 480
+            [width] => 200
+            [height] => 50
+            [font_family] => Montserrat
+            [font_size] => 20
+            [font_color] => #000000
+            [alignment] => left
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 14:45:22] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 14:45:22] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 14:45:26] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 14:45:26] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 14:45:33] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 14:45:33] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 14:46:27] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 14:46:27] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 14:50:04] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 14:50:04] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 14:50:44] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 117
+    [name] => Novo Template
+    [base_image_id] => 12569
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-45.avif
+    [created_at] => 2025-09-02 14:50:43
+)
+
+
+[2025-09-02 14:50:44] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 184
+            [template_id] => 117
+            [pos_x] => 193
+            [pos_y] => 320
+            [width] => 200
+            [height] => 66
+            [font_family] => Montserrat
+            [font_size] => 20
+            [font_color] => #000000
+            [alignment] => left
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 14:55:21] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 117
+    [name] => Novo Template
+    [base_image_id] => 12569
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-45.avif
+    [created_at] => 2025-09-02 14:50:43
+)
+
+
+[2025-09-02 14:55:21] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 184
+            [template_id] => 117
+            [pos_x] => 193
+            [pos_y] => 320
+            [width] => 200
+            [height] => 66
+            [font_family] => Montserrat
+            [font_size] => 20
+            [font_color] => #000000
+            [alignment] => left
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 14:55:31] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 14:55:31] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 14:55:34] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 14:55:34] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 14:55:59] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 118
+    [name] => Novo Template
+    [base_image_id] => 12570
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-46.avif
+    [created_at] => 2025-09-02 14:55:57
+)
+
+
+[2025-09-02 14:55:59] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 185
+            [template_id] => 118
+            [pos_x] => 119
+            [pos_y] => 307
+            [width] => 200
+            [height] => 50
+            [font_family] => Montserrat
+            [font_size] => 20
+            [font_color] => #000000
+            [alignment] => left
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 14:57:20] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 14:57:20] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 14:57:23] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 14:57:23] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 14:57:29] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 14:57:29] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 17:01:45] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 17:01:45] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 17:02:24] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 17:02:24] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 17:03:09] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 119
+    [name] => Novo Template
+    [base_image_id] => 12572
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-48.avif
+    [created_at] => 2025-09-02 17:03:07
+)
+
+
+[2025-09-02 17:03:09] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 186
+            [template_id] => 119
+            [pos_x] => 166
+            [pos_y] => 737
+            [width] => 307
+            [height] => 91
+            [font_family] => Montserrat
+            [font_size] => 45
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:03:20] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 17:03:20] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 17:03:24] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 17:03:24] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 17:04:44] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 17:04:44] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 17:04:50] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 69
+    [name] => Novo Template
+    [base_image_id] => 12502
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-2.png
+    [created_at] => 2025-08-20 18:56:51
+)
+
+
+[2025-09-02 17:04:50] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 154
+            [template_id] => 69
+            [pos_x] => 93
+            [pos_y] => 747
+            [width] => 507
+            [height] => 80
+            [font_family] => Montserrat
+            [font_size] => 53
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:04:54] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 17:04:54] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 17:12:55] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 17:12:55] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 17:12:58] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 17:12:58] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 17:13:09] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 69
+    [name] => Novo Template
+    [base_image_id] => 12502
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-2.png
+    [created_at] => 2025-08-20 18:56:51
+)
+
+
+[2025-09-02 17:13:09] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 154
+            [template_id] => 69
+            [pos_x] => 93
+            [pos_y] => 747
+            [width] => 507
+            [height] => 80
+            [font_family] => Montserrat
+            [font_size] => 53
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:13:15] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 69
+    [name] => Novo Template
+    [base_image_id] => 12502
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-2.png
+    [created_at] => 2025-08-20 18:56:51
+)
+
+
+[2025-09-02 17:13:15] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 154
+            [template_id] => 69
+            [pos_x] => 93
+            [pos_y] => 747
+            [width] => 507
+            [height] => 80
+            [font_family] => Montserrat
+            [font_size] => 53
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:13:20] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 69
+    [name] => Novo Template
+    [base_image_id] => 12502
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-2.png
+    [created_at] => 2025-08-20 18:56:51
+)
+
+
+[2025-09-02 17:13:20] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 154
+            [template_id] => 69
+            [pos_x] => 93
+            [pos_y] => 747
+            [width] => 507
+            [height] => 80
+            [font_family] => Montserrat
+            [font_size] => 53
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:13:41] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 69
+    [name] => Novo Template
+    [base_image_id] => 12502
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-2.png
+    [created_at] => 2025-08-20 18:56:51
+)
+
+
+[2025-09-02 17:13:41] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 154
+            [template_id] => 69
+            [pos_x] => 93
+            [pos_y] => 747
+            [width] => 507
+            [height] => 80
+            [font_family] => Montserrat
+            [font_size] => 53
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:14:06] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 69
+    [name] => Novo Template
+    [base_image_id] => 12502
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-2.png
+    [created_at] => 2025-08-20 18:56:51
+)
+
+
+[2025-09-02 17:14:06] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 154
+            [template_id] => 69
+            [pos_x] => 93
+            [pos_y] => 747
+            [width] => 507
+            [height] => 80
+            [font_family] => Montserrat
+            [font_size] => 53
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:15:02] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 17:15:02] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 17:15:07] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 69
+    [name] => Novo Template
+    [base_image_id] => 12502
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-2.png
+    [created_at] => 2025-08-20 18:56:51
+)
+
+
+[2025-09-02 17:15:07] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 154
+            [template_id] => 69
+            [pos_x] => 93
+            [pos_y] => 747
+            [width] => 507
+            [height] => 80
+            [font_family] => Montserrat
+            [font_size] => 53
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:30:32] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 69
+    [name] => Novo Template
+    [base_image_id] => 12502
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-2.png
+    [created_at] => 2025-08-20 18:56:51
+)
+
+
+[2025-09-02 17:30:32] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 154
+            [template_id] => 69
+            [pos_x] => 93
+            [pos_y] => 747
+            [width] => 507
+            [height] => 80
+            [font_family] => Montserrat
+            [font_size] => 53
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:30:39] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 73
+    [name] => Novo Template
+    [base_image_id] => 12512
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-12.png
+    [created_at] => 2025-08-20 19:37:03
+)
+
+
+[2025-09-02 17:30:39] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 157
+            [template_id] => 73
+            [pos_x] => 57
+            [pos_y] => 487
+            [width] => 273
+            [height] => 39
+            [font_family] => Montserrat
+            [font_size] => 28
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:40:53] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 73
+    [name] => Novo Template
+    [base_image_id] => 12512
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-12.png
+    [created_at] => 2025-08-20 19:37:03
+)
+
+
+[2025-09-02 17:40:53] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 157
+            [template_id] => 73
+            [pos_x] => 57
+            [pos_y] => 487
+            [width] => 273
+            [height] => 39
+            [font_family] => Montserrat
+            [font_size] => 28
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:41:03] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 75
+    [name] => Novo Template
+    [base_image_id] => 12523
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-18.png
+    [created_at] => 2025-08-20 21:23:31
+)
+
+
+[2025-09-02 17:41:03] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 165
+            [template_id] => 75
+            [pos_x] => 106
+            [pos_y] => 497
+            [width] => 200
+            [height] => 50
+            [font_family] => Montserrat
+            [font_size] => 20
+            [font_color] => #000000
+            [alignment] => 
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:41:08] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 75
+    [name] => Novo Template
+    [base_image_id] => 12523
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-18.png
+    [created_at] => 2025-08-20 21:23:31
+)
+
+
+[2025-09-02 17:41:08] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 165
+            [template_id] => 75
+            [pos_x] => 106
+            [pos_y] => 497
+            [width] => 200
+            [height] => 50
+            [font_family] => Montserrat
+            [font_size] => 20
+            [font_color] => #000000
+            [alignment] => 
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:41:20] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 17:41:20] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 17:41:26] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 71
+    [name] => Novo Template
+    [base_image_id] => 12511
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-11.png
+    [created_at] => 2025-08-20 19:30:23
+)
+
+
+[2025-09-02 17:41:26] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 156
+            [template_id] => 71
+            [pos_x] => 133
+            [pos_y] => 732
+            [width] => 384
+            [height] => 75
+            [font_family] => Montserrat
+            [font_size] => 54
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:41:32] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 71
+    [name] => Novo Template
+    [base_image_id] => 12511
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-11.png
+    [created_at] => 2025-08-20 19:30:23
+)
+
+
+[2025-09-02 17:41:32] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 156
+            [template_id] => 71
+            [pos_x] => 133
+            [pos_y] => 732
+            [width] => 384
+            [height] => 75
+            [font_family] => Montserrat
+            [font_size] => 54
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:41:49] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 119
+    [name] => Novo Template
+    [base_image_id] => 12572
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-48.avif
+    [created_at] => 2025-09-02 17:03:07
+)
+
+
+[2025-09-02 17:41:49] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 186
+            [template_id] => 119
+            [pos_x] => 166
+            [pos_y] => 737
+            [width] => 307
+            [height] => 91
+            [font_family] => Montserrat
+            [font_size] => 45
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:42:53] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 119
+    [name] => Novo Template
+    [base_image_id] => 12572
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-48.avif
+    [created_at] => 2025-09-02 17:03:07
+)
+
+
+[2025-09-02 17:42:53] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 186
+            [template_id] => 119
+            [pos_x] => 166
+            [pos_y] => 737
+            [width] => 307
+            [height] => 91
+            [font_family] => Montserrat
+            [font_size] => 45
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:43:00] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 119
+    [name] => Novo Template
+    [base_image_id] => 12572
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-48.avif
+    [created_at] => 2025-09-02 17:03:07
+)
+
+
+[2025-09-02 17:43:00] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 186
+            [template_id] => 119
+            [pos_x] => 166
+            [pos_y] => 737
+            [width] => 307
+            [height] => 91
+            [font_family] => Montserrat
+            [font_size] => 45
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:43:32] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 17:43:32] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 17:43:34] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 17:43:34] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 17:43:38] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 17:43:38] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 17:43:41] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 17:43:41] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 17:43:42] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 17:43:42] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 17:43:59] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 119
+    [name] => Novo Template
+    [base_image_id] => 12572
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-48.avif
+    [created_at] => 2025-09-02 17:03:07
+)
+
+
+[2025-09-02 17:43:59] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 186
+            [template_id] => 119
+            [pos_x] => 166
+            [pos_y] => 737
+            [width] => 307
+            [height] => 91
+            [font_family] => Montserrat
+            [font_size] => 45
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:44:09] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 119
+    [name] => Novo Template
+    [base_image_id] => 12572
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-48.avif
+    [created_at] => 2025-09-02 17:03:07
+)
+
+
+[2025-09-02 17:44:09] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 186
+            [template_id] => 119
+            [pos_x] => 166
+            [pos_y] => 737
+            [width] => 307
+            [height] => 91
+            [font_family] => Montserrat
+            [font_size] => 45
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:44:51] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 119
+    [name] => Novo Template
+    [base_image_id] => 12572
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-48.avif
+    [created_at] => 2025-09-02 17:03:07
+)
+
+
+[2025-09-02 17:44:51] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 186
+            [template_id] => 119
+            [pos_x] => 166
+            [pos_y] => 737
+            [width] => 307
+            [height] => 91
+            [font_family] => Montserrat
+            [font_size] => 45
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:45:59] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 17:45:59] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 17:46:11] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 69
+    [name] => Novo Template
+    [base_image_id] => 12502
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-2.png
+    [created_at] => 2025-08-20 18:56:51
+)
+
+
+[2025-09-02 17:46:11] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 154
+            [template_id] => 69
+            [pos_x] => 93
+            [pos_y] => 747
+            [width] => 507
+            [height] => 80
+            [font_family] => Montserrat
+            [font_size] => 53
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:48:19] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 69
+    [name] => Novo Template
+    [base_image_id] => 12502
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-2.png
+    [created_at] => 2025-08-20 18:56:51
+)
+
+
+[2025-09-02 17:48:19] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 154
+            [template_id] => 69
+            [pos_x] => 93
+            [pos_y] => 747
+            [width] => 507
+            [height] => 80
+            [font_family] => Montserrat
+            [font_size] => 53
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:48:26] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 73
+    [name] => Novo Template
+    [base_image_id] => 12512
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-12.png
+    [created_at] => 2025-08-20 19:37:03
+)
+
+
+[2025-09-02 17:48:26] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 157
+            [template_id] => 73
+            [pos_x] => 57
+            [pos_y] => 487
+            [width] => 273
+            [height] => 39
+            [font_family] => Montserrat
+            [font_size] => 28
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:48:36] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 119
+    [name] => Novo Template
+    [base_image_id] => 12572
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-48.avif
+    [created_at] => 2025-09-02 17:03:07
+)
+
+
+[2025-09-02 17:48:36] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 186
+            [template_id] => 119
+            [pos_x] => 166
+            [pos_y] => 737
+            [width] => 307
+            [height] => 91
+            [font_family] => Montserrat
+            [font_size] => 45
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:49:25] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 119
+    [name] => Novo Template
+    [base_image_id] => 12572
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-48.avif
+    [created_at] => 2025-09-02 17:03:07
+)
+
+
+[2025-09-02 17:49:25] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 186
+            [template_id] => 119
+            [pos_x] => 166
+            [pos_y] => 737
+            [width] => 307
+            [height] => 91
+            [font_family] => Montserrat
+            [font_size] => 45
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:49:32] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 58
+    [name] => CRACHÁ NORTE SUL LOG (VIGILANTE)
+    [base_image_id] => 7965
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/06/CRACHA-NORTE-SUL-LOG-VIGILANTE.png
+    [created_at] => 2025-06-26 18:30:42
+)
+
+
+[2025-09-02 17:49:32] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 77
+            [template_id] => 58
+            [pos_x] => 196
+            [pos_y] => 413
+            [width] => 697
+            [height] => 963
+            [font_family] => 
+            [font_size] => 0
+            [font_color] => 
+            [alignment] => 
+            [default_text] => 
+            [line_height_multiplier] => 1.3
+            [field_type] => image
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 77
+        )
+
+    [1] => stdClass Object
+        (
+            [field_id] => 78
+            [template_id] => 58
+            [pos_x] => 39
+            [pos_y] => 556
+            [width] => 355
+            [height] => 46
+            [font_family] => Montserrat-Black
+            [font_size] => 24
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => NOME DO COLABORADOR
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 0
+            [field_order] => 1
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 78
+        )
+
+    [2] => stdClass Object
+        (
+            [field_id] => 79
+            [template_id] => 58
+            [pos_x] => 39
+            [pos_y] => 605
+            [width] => 356
+            [height] => 43
+            [font_family] => Montserrat-Black
+            [font_size] => 24
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => VIGILANTE
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 0
+            [field_order] => 2
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 79
+        )
+
+    [3] => stdClass Object
+        (
+            [field_id] => 80
+            [template_id] => 58
+            [pos_x] => 425
+            [pos_y] => 258
+            [width] => 276
+            [height] => 39
+            [font_family] => Montserrat-Black
+            [font_size] => 23
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => 03.052.564/0003-28
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 0
+            [field_order] => 3
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 80
+        )
+
+    [4] => stdClass Object
+        (
+            [field_id] => 81
+            [template_id] => 58
+            [pos_x] => 712
+            [pos_y] => 258
+            [width] => 275
+            [height] => 37
+            [font_family] => Montserrat-Black
+            [font_size] => 23
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => 97664/2024
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 0
+            [field_order] => 4
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 81
+        )
+
+    [5] => stdClass Object
+        (
+            [field_id] => 82
+            [template_id] => 58
+            [pos_x] => 426
+            [pos_y] => 330
+            [width] => 275
+            [height] => 36
+            [font_family] => Montserrat-Black
+            [font_size] => 23
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => 578437
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 0
+            [field_order] => 5
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 82
+        )
+
+    [6] => stdClass Object
+        (
+            [field_id] => 83
+            [template_id] => 58
+            [pos_x] => 713
+            [pos_y] => 327
+            [width] => 274
+            [height] => 35
+            [font_family] => Montserrat-Black
+            [font_size] => 23
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => 7588082
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 0
+            [field_order] => 6
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 83
+        )
+
+    [7] => stdClass Object
+        (
+            [field_id] => 84
+            [template_id] => 58
+            [pos_x] => 426
+            [pos_y] => 398
+            [width] => 275
+            [height] => 38
+            [font_family] => Montserrat-Black
+            [font_size] => 23
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => 2289 - PA
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 0
+            [field_order] => 7
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 84
+        )
+
+    [8] => stdClass Object
+        (
+            [field_id] => 85
+            [template_id] => 58
+            [pos_x] => 710
+            [pos_y] => 399
+            [width] => 275
+            [height] => 38
+            [font_family] => Montserrat-Black
+            [font_size] => 23
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => 20/02/2024
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 0
+            [field_order] => 8
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 85
+        )
+
+    [9] => stdClass Object
+        (
+            [field_id] => 86
+            [template_id] => 58
+            [pos_x] => 426
+            [pos_y] => 471
+            [width] => 274
+            [height] => 36
+            [font_family] => Montserrat-Black
+            [font_size] => 23
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => SSP/PA
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 0
+            [field_order] => 9
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 86
+        )
+
+    [10] => stdClass Object
+        (
+            [field_id] => 87
+            [template_id] => 58
+            [pos_x] => 710
+            [pos_y] => 471
+            [width] => 277
+            [height] => 36
+            [font_family] => Montserrat-Black
+            [font_size] => 23
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => 6 Meses
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 0
+            [field_order] => 10
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 87
+        )
+
+    [11] => stdClass Object
+        (
+            [field_id] => 88
+            [template_id] => 58
+            [pos_x] => 424
+            [pos_y] => 544
+            [width] => 278
+            [height] => 37
+            [font_family] => Montserrat-Black
+            [font_size] => 23
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => 23/03/2025
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 0
+            [field_order] => 11
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 88
+        )
+
+)
+
+
+[2025-09-02 17:49:38] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 69
+    [name] => Novo Template
+    [base_image_id] => 12502
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-2.png
+    [created_at] => 2025-08-20 18:56:51
+)
+
+
+[2025-09-02 17:49:38] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 154
+            [template_id] => 69
+            [pos_x] => 93
+            [pos_y] => 747
+            [width] => 507
+            [height] => 80
+            [font_family] => Montserrat
+            [font_size] => 53
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:49:51] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 73
+    [name] => Novo Template
+    [base_image_id] => 12512
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-12.png
+    [created_at] => 2025-08-20 19:37:03
+)
+
+
+[2025-09-02 17:49:51] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 157
+            [template_id] => 73
+            [pos_x] => 57
+            [pos_y] => 487
+            [width] => 273
+            [height] => 39
+            [font_family] => Montserrat
+            [font_size] => 28
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:52:38] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 73
+    [name] => Novo Template
+    [base_image_id] => 12512
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-12.png
+    [created_at] => 2025-08-20 19:37:03
+)
+
+
+[2025-09-02 17:52:38] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 157
+            [template_id] => 73
+            [pos_x] => 57
+            [pos_y] => 487
+            [width] => 273
+            [height] => 39
+            [font_family] => Montserrat
+            [font_size] => 28
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:52:52] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 73
+    [name] => Novo Template
+    [base_image_id] => 12512
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-12.png
+    [created_at] => 2025-08-20 19:37:03
+)
+
+
+[2025-09-02 17:52:52] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 157
+            [template_id] => 73
+            [pos_x] => 57
+            [pos_y] => 487
+            [width] => 273
+            [height] => 39
+            [font_family] => Montserrat
+            [font_size] => 28
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:53:05] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 119
+    [name] => Novo Template
+    [base_image_id] => 12572
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-48.avif
+    [created_at] => 2025-09-02 17:03:07
+)
+
+
+[2025-09-02 17:53:05] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 186
+            [template_id] => 119
+            [pos_x] => 166
+            [pos_y] => 737
+            [width] => 307
+            [height] => 91
+            [font_family] => Montserrat
+            [font_size] => 45
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:53:56] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 17:53:56] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 17:53:56] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 17:53:56] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 17:54:01] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 17:54:01] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 17:54:02] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 17:54:02] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 17:54:03] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 17:54:03] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 17:54:03] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 17:54:03] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 17:56:52] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 119
+    [name] => Novo Template
+    [base_image_id] => 12572
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-48.avif
+    [created_at] => 2025-09-02 17:03:07
+)
+
+
+[2025-09-02 17:56:52] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 186
+            [template_id] => 119
+            [pos_x] => 166
+            [pos_y] => 737
+            [width] => 307
+            [height] => 91
+            [font_family] => Montserrat
+            [font_size] => 45
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:57:06] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 117
+    [name] => Novo Template
+    [base_image_id] => 12569
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-45.avif
+    [created_at] => 2025-09-02 14:50:43
+)
+
+
+[2025-09-02 17:57:06] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 184
+            [template_id] => 117
+            [pos_x] => 193
+            [pos_y] => 320
+            [width] => 200
+            [height] => 66
+            [font_family] => Montserrat
+            [font_size] => 20
+            [font_color] => #000000
+            [alignment] => left
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:57:16] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 117
+    [name] => Novo Template
+    [base_image_id] => 12569
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-45.avif
+    [created_at] => 2025-09-02 14:50:43
+)
+
+
+[2025-09-02 17:57:16] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 184
+            [template_id] => 117
+            [pos_x] => 193
+            [pos_y] => 320
+            [width] => 200
+            [height] => 66
+            [font_family] => Montserrat
+            [font_size] => 20
+            [font_color] => #000000
+            [alignment] => left
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:57:37] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 117
+    [name] => Novo Template
+    [base_image_id] => 12569
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-45.avif
+    [created_at] => 2025-09-02 14:50:43
+)
+
+
+[2025-09-02 17:57:37] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 184
+            [template_id] => 117
+            [pos_x] => 193
+            [pos_y] => 320
+            [width] => 200
+            [height] => 66
+            [font_family] => Montserrat
+            [font_size] => 20
+            [font_color] => #000000
+            [alignment] => left
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 17:57:52] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 119
+    [name] => Novo Template
+    [base_image_id] => 12572
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-48.avif
+    [created_at] => 2025-09-02 17:03:07
+)
+
+
+[2025-09-02 17:57:52] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 186
+            [template_id] => 119
+            [pos_x] => 166
+            [pos_y] => 737
+            [width] => 307
+            [height] => 91
+            [font_family] => Montserrat
+            [font_size] => 45
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 18:03:45] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 119
+    [name] => Novo Template
+    [base_image_id] => 12572
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-48.avif
+    [created_at] => 2025-09-02 17:03:07
+)
+
+
+[2025-09-02 18:03:45] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 186
+            [template_id] => 119
+            [pos_x] => 166
+            [pos_y] => 737
+            [width] => 307
+            [height] => 91
+            [font_family] => Montserrat
+            [font_size] => 45
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 18:03:58] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 119
+    [name] => Novo Template
+    [base_image_id] => 12572
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-48.avif
+    [created_at] => 2025-09-02 17:03:07
+)
+
+
+[2025-09-02 18:03:58] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 186
+            [template_id] => 119
+            [pos_x] => 166
+            [pos_y] => 737
+            [width] => 307
+            [height] => 91
+            [font_family] => Montserrat
+            [font_size] => 45
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 18:11:36] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 119
+    [name] => Novo Template
+    [base_image_id] => 12572
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-48.avif
+    [created_at] => 2025-09-02 17:03:07
+)
+
+
+[2025-09-02 18:11:36] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 186
+            [template_id] => 119
+            [pos_x] => 166
+            [pos_y] => 737
+            [width] => 307
+            [height] => 91
+            [font_family] => Montserrat
+            [font_size] => 45
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 18:11:43] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 119
+    [name] => Novo Template
+    [base_image_id] => 12572
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-48.avif
+    [created_at] => 2025-09-02 17:03:07
+)
+
+
+[2025-09-02 18:11:43] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 186
+            [template_id] => 119
+            [pos_x] => 166
+            [pos_y] => 737
+            [width] => 307
+            [height] => 91
+            [font_family] => Montserrat
+            [font_size] => 45
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 18:11:51] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 119
+    [name] => Novo Template
+    [base_image_id] => 12572
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-48.avif
+    [created_at] => 2025-09-02 17:03:07
+)
+
+
+[2025-09-02 18:11:51] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 186
+            [template_id] => 119
+            [pos_x] => 166
+            [pos_y] => 737
+            [width] => 307
+            [height] => 91
+            [font_family] => Montserrat
+            [font_size] => 45
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 18:12:01] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 18:12:01] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 18:12:09] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 119
+    [name] => Novo Template
+    [base_image_id] => 12572
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-48.avif
+    [created_at] => 2025-09-02 17:03:07
+)
+
+
+[2025-09-02 18:12:09] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 186
+            [template_id] => 119
+            [pos_x] => 166
+            [pos_y] => 737
+            [width] => 307
+            [height] => 91
+            [font_family] => Montserrat
+            [font_size] => 45
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 18:16:01] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 119
+    [name] => Novo Template
+    [base_image_id] => 12572
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-48.avif
+    [created_at] => 2025-09-02 17:03:07
+)
+
+
+[2025-09-02 18:16:01] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 186
+            [template_id] => 119
+            [pos_x] => 166
+            [pos_y] => 737
+            [width] => 307
+            [height] => 91
+            [font_family] => Montserrat
+            [font_size] => 45
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 18:16:11] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 119
+    [name] => Novo Template
+    [base_image_id] => 12572
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-48.avif
+    [created_at] => 2025-09-02 17:03:07
+)
+
+
+[2025-09-02 18:16:11] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 186
+            [template_id] => 119
+            [pos_x] => 166
+            [pos_y] => 737
+            [width] => 307
+            [height] => 91
+            [font_family] => Montserrat
+            [font_size] => 45
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 18:17:49] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 119
+    [name] => Novo Template
+    [base_image_id] => 12572
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-48.avif
+    [created_at] => 2025-09-02 17:03:07
+)
+
+
+[2025-09-02 18:17:49] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 186
+            [template_id] => 119
+            [pos_x] => 166
+            [pos_y] => 737
+            [width] => 307
+            [height] => 91
+            [font_family] => Montserrat
+            [font_size] => 45
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 18:17:57] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 119
+    [name] => Novo Template
+    [base_image_id] => 12572
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-48.avif
+    [created_at] => 2025-09-02 17:03:07
+)
+
+
+[2025-09-02 18:17:57] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 186
+            [template_id] => 119
+            [pos_x] => 166
+            [pos_y] => 737
+            [width] => 307
+            [height] => 91
+            [font_family] => Montserrat
+            [font_size] => 45
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 18:18:15] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 119
+    [name] => Novo Template
+    [base_image_id] => 12572
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-48.avif
+    [created_at] => 2025-09-02 17:03:07
+)
+
+
+[2025-09-02 18:18:15] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 186
+            [template_id] => 119
+            [pos_x] => 166
+            [pos_y] => 737
+            [width] => 307
+            [height] => 91
+            [font_family] => Montserrat
+            [font_size] => 45
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 18:20:57] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 119
+    [name] => Novo Template
+    [base_image_id] => 12572
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-48.avif
+    [created_at] => 2025-09-02 17:03:07
+)
+
+
+[2025-09-02 18:20:57] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 186
+            [template_id] => 119
+            [pos_x] => 166
+            [pos_y] => 737
+            [width] => 307
+            [height] => 91
+            [font_family] => Montserrat
+            [font_size] => 45
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 18:50:55] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 119
+    [name] => Novo Template
+    [base_image_id] => 12572
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-48.avif
+    [created_at] => 2025-09-02 17:03:07
+)
+
+
+[2025-09-02 18:50:55] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 186
+            [template_id] => 119
+            [pos_x] => 166
+            [pos_y] => 737
+            [width] => 307
+            [height] => 91
+            [font_family] => Montserrat
+            [font_size] => 45
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 18:51:07] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 119
+    [name] => Novo Template
+    [base_image_id] => 12572
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-48.avif
+    [created_at] => 2025-09-02 17:03:07
+)
+
+
+[2025-09-02 18:51:07] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 186
+            [template_id] => 119
+            [pos_x] => 166
+            [pos_y] => 737
+            [width] => 307
+            [height] => 91
+            [font_family] => Montserrat
+            [font_size] => 45
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 18:54:18] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 119
+    [name] => Novo Template
+    [base_image_id] => 12572
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-48.avif
+    [created_at] => 2025-09-02 17:03:07
+)
+
+
+[2025-09-02 18:54:18] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 186
+            [template_id] => 119
+            [pos_x] => 166
+            [pos_y] => 737
+            [width] => 307
+            [height] => 91
+            [font_family] => Montserrat
+            [font_size] => 45
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 18:54:40] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 119
+    [name] => Novo Template
+    [base_image_id] => 12572
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-48.avif
+    [created_at] => 2025-09-02 17:03:07
+)
+
+
+[2025-09-02 18:54:40] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 186
+            [template_id] => 119
+            [pos_x] => 166
+            [pos_y] => 737
+            [width] => 307
+            [height] => 91
+            [font_family] => Montserrat
+            [font_size] => 45
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 19:13:26] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 119
+    [name] => Novo Template
+    [base_image_id] => 12572
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-48.avif
+    [created_at] => 2025-09-02 17:03:07
+)
+
+
+[2025-09-02 19:13:26] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 186
+            [template_id] => 119
+            [pos_x] => 166
+            [pos_y] => 737
+            [width] => 307
+            [height] => 91
+            [font_family] => Montserrat
+            [font_size] => 45
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 19:14:31] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 119
+    [name] => Novo Template
+    [base_image_id] => 12572
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-48.avif
+    [created_at] => 2025-09-02 17:03:07
+)
+
+
+[2025-09-02 19:14:31] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 186
+            [template_id] => 119
+            [pos_x] => 166
+            [pos_y] => 737
+            [width] => 307
+            [height] => 91
+            [font_family] => Montserrat
+            [font_size] => 45
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 19:18:40] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 119
+    [name] => Novo Template
+    [base_image_id] => 12572
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-48.avif
+    [created_at] => 2025-09-02 17:03:07
+)
+
+
+[2025-09-02 19:18:40] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 186
+            [template_id] => 119
+            [pos_x] => 166
+            [pos_y] => 737
+            [width] => 307
+            [height] => 91
+            [font_family] => Montserrat
+            [font_size] => 45
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 19:24:15] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 19:24:15] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 19:26:00] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 120
+    [name] => Novo Template
+    [base_image_id] => 12578
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-51.avif
+    [created_at] => 2025-09-02 19:25:58
+)
+
+
+[2025-09-02 19:26:00] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 187
+            [template_id] => 120
+            [pos_x] => 152
+            [pos_y] => 549
+            [width] => 359
+            [height] => 307
+            [font_family] => Montserrat
+            [font_size] => 34
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+ksdfkksd
+sdkfsdfkfksdkkf
+skdkfksdkf
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => 
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 19:44:05] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 120
+    [name] => Novo Template
+    [base_image_id] => 12578
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-51.avif
+    [created_at] => 2025-09-02 19:25:58
+)
+
+
+[2025-09-02 19:44:05] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 187
+            [template_id] => 120
+            [pos_x] => 152
+            [pos_y] => 549
+            [width] => 359
+            [height] => 307
+            [font_family] => Montserrat
+            [font_size] => 34
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => Novo Texto
+ksdfkksd
+sdkfsdfkfksdkkf
+skdkfksdkf
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => 
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-02 19:44:13] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 19:44:13] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 19:44:16] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 19:44:16] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 19:44:22] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 19:44:22] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 19:46:06] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 19:46:06] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 19:46:50] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 19:46:50] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 19:50:29] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 19:50:29] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 19:53:19] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 19:53:19] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 20:00:49] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 20:00:49] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 20:03:23] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 20:03:23] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 20:03:29] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 20:03:29] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 20:04:45] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 20:04:45] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 20:05:01] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 20:05:01] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 20:05:33] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 20:05:33] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 20:05:48] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 20:05:48] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 20:05:53] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 20:05:53] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 20:06:42] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 20:06:42] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 20:08:46] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 20:08:46] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 20:08:53] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 20:08:53] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 20:15:51] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 20:15:51] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 20:15:57] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 20:15:57] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 20:16:25] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 20:16:25] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 20:19:53] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 20:19:53] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 20:20:02] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 20:20:02] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 20:21:15] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 20:21:15] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 20:21:21] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 20:21:21] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 20:22:15] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 20:22:15] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 20:22:21] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 20:22:21] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 20:22:52] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 20:22:52] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 20:23:44] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 20:23:44] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 20:23:49] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 20:23:49] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 20:24:32] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 20:24:32] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 20:24:35] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 20:24:35] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 20:29:50] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 20:29:50] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 20:30:38] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 20:30:38] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 20:33:25] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 20:33:25] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-02 20:36:26] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-02 20:36:26] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 11:08:39] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 11:08:39] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 11:14:51] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 11:14:51] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 11:18:51] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 121
+    [name] => Novo Template
+    [base_image_id] => 12597
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/09/CRACHA-KOTHE-AGRICOLA-70.avif
+    [created_at] => 2025-09-03 11:18:49
+)
+
+
+[2025-09-03 11:18:51] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 188
+            [template_id] => 121
+            [pos_x] => 95
+            [pos_y] => 744
+            [width] => 459
+            [height] => 152
+            [font_family] => Poppins
+            [font_size] => 36
+            [font_color] => #000000
+            [alignment] => center
+            [default_text] => teste esse é teste de  fonte
+            [line_height_multiplier] => 1.3
+            [field_type] => text
+            [container_shape] => 
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 700
+            [name] => Campo 1
+        )
+
+)
+
+
+[2025-09-03 11:21:14] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 11:21:14] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 11:21:38] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 11:21:38] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 11:26:39] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 11:26:39] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 11:30:14] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 11:30:14] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 11:30:27] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 11:30:27] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 11:51:38] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 11:51:38] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 11:51:41] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 11:51:41] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 11:51:50] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 11:51:50] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 11:59:00] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 11:59:00] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 11:59:04] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 11:59:04] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 11:59:10] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 11:59:10] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 12:00:05] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 12:00:05] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 12:06:31] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 12:06:31] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 12:06:45] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 12:06:45] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 12:07:52] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 12:07:52] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 12:10:32] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 12:10:32] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 12:14:15] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 12:14:15] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 12:16:04] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 12:16:04] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 12:19:00] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 12:19:00] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 12:19:21] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 12:19:21] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 12:24:18] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 12:24:18] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 12:29:26] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 12:29:26] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 12:54:11] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 12:54:11] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 12:58:01] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 12:58:01] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 12:58:50] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 12:58:50] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 12:59:41] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 12:59:41] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 13:02:15] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 13:02:15] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 13:02:18] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 13:02:18] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 13:02:26] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 13:02:26] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 13:06:51] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 13:06:51] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 13:06:56] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 13:06:56] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 13:07:00] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 13:07:00] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 13:07:05] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 13:07:05] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 13:07:18] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 13:07:18] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 13:08:16] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 13:08:16] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 13:10:24] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 13:10:24] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 13:11:00] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 13:11:00] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 13:11:56] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 13:11:56] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 13:42:09] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 13:42:09] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 14:08:45] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 14:08:45] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 14:10:18] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 14:10:18] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 14:10:43] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 14:10:43] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 14:12:22] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 14:12:22] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 14:12:43] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 14:12:43] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 14:17:30] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+stdClass Object
+(
+    [template_id] => 78
+    [name] => Novo Template
+    [base_image_id] => 12440
+    [base_image_url] => https://pluginsteste.unikothe.com.br/wp-content/uploads/2025/08/Gabriel-Santos_dc4f84-3.png
+    [created_at] => 2025-08-21 18:26:54
+)
+
+
+[2025-09-03 14:17:30] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+    [0] => stdClass Object
+        (
+            [field_id] => 134
+            [template_id] => 78
+            [pos_x] => 0
+            [pos_y] => 0
+            [width] => 0
+            [height] => 0
+            [font_family] => 
+            [font_size] => 0
+            [font_color] => 
+            [alignment] => 
+            [default_text] => 
+            [line_height_multiplier] => 1.3
+            [field_type] => 
+            [container_shape] => rectangle
+            [z_index_order] => 1
+            [field_order] => 0
+            [is_debug_mode] => 0
+            [font_weight] => 
+            [name] => 
+        )
+
+)
+
+
+[2025-09-03 17:09:38] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:09:38] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:11:29] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:11:29] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:11:38] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:11:38] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:12:08] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:12:08] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:15:13] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:15:13] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:15:17] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:15:17] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:15:30] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:15:30] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:20:04] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:20:04] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:20:09] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:20:09] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:20:22] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:20:22] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:30:02] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:30:02] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:30:08] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:30:08] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:30:19] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:30:19] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:36:59] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:36:59] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:42:24] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:42:24] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:42:46] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:42:46] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:43:17] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:43:17] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:46:17] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:46:17] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:47:02] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:47:02] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:48:39] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:48:39] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:49:52] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:49:52] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:51:24] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:51:24] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:51:49] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:51:49] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:52:28] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:52:28] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:52:59] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:52:59] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:53:09] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:53:09] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:53:58] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:53:58] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:54:02] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:54:02] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:54:05] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:54:05] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:57:32] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:57:32] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:58:17] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:58:17] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:58:21] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:58:21] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:59:13] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:59:13] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 17:59:22] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 17:59:22] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 18:00:06] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 18:00:06] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 18:04:04] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 18:04:04] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 18:04:32] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 18:04:32] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 18:04:44] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 18:04:44] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 18:09:06] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 18:09:06] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 18:09:12] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 18:09:12] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 18:17:11] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 18:17:11] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 18:19:08] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 18:19:08] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 18:19:15] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 18:19:15] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 18:20:37] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 18:20:37] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 18:21:26] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 18:21:26] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 18:30:45] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 18:30:45] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 18:46:28] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 18:46:28] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 18:46:34] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 18:46:34] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 18:47:01] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 18:47:01] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 19:55:14] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 19:55:14] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 19:58:01] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 19:58:01] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 20:01:32] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 20:01:32] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 20:15:30] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 20:15:30] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 20:27:43] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 20:27:43] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-03 20:39:56] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-03 20:39:56] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+
+[2025-09-04 12:53:58] --- DADOS DO TEMPLATE ENVIADOS PARA O JAVASCRIPT ---
+
+
+[2025-09-04 12:53:58] --- DADOS DOS CAMPOS ENVIADOS PARA O JAVASCRIPT ---
+Array
+(
+)
+
+

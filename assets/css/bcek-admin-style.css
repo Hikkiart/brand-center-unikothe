@@ -1,0 +1,32 @@
+/* Estilos para a nova interface de administração baseada em Tailwind */
+.bcek-admin-container {
+    font-family: 'Poppins', sans-serif; /* Garante que a fonte padrão seja carregada */
+}
+
+.custom-scrollbar::-webkit-scrollbar { width: 6px; }
+.custom-scrollbar::-webkit-scrollbar-track { background: #f1f5f9; }
+.custom-scrollbar::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 10px; }
+.custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #64748b; }
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.align-btn-group button.is-active {
+    background-color: #3B82F6;
+    color: white;
+}
+
+.accordion-item.is-dragging {
+    opacity: 0.5;
+    background: #e0f2fe;
+}
+
+/* Garante que o CSS do tema não interfira com a lista */
+.bcek-admin-container ul, .bcek-admin-container li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
