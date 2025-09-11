@@ -30,3 +30,74 @@
     margin: 0;
     padding: 0;
 }
+
+/* --- ESTILOS PARA OS CAMPOS E PUXADORES (ADMIN PREVIEW) --- */
+
+.draggable-field {
+    touch-action: none;
+    user-select: none;
+    box-sizing: border-box;
+    cursor: move;
+    border: 2px dashed transparent;
+    position: absolute;
+}
+.draggable-field.is-active {
+    border-color: rgba(59, 130, 246, 0.7); /* Azul */
+    z-index: 1000; /* Garante que o campo ativo fique por cima */
+}
+
+/* Estilo base para os puxadores de redimensionamento */
+.draggable-field .resize-handle {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #FFF;
+    border: 2px solid #3b82f6; /* Azul do Tailwind (blue-500) */
+    border-radius: 50%;
+    z-index: 15;
+    box-sizing: border-box;
+    display: none; /* Escondidos por defeito */
+}
+
+/* Mostra os puxadores apenas quando o campo está ativo */
+.draggable-field.is-active .resize-handle {
+    display: block;
+}
+
+/* Posiciona cada um dos 8 puxadores */
+.resize-handle.top-left { top: 0; left: 0; cursor: nwse-resize; transform: translate(-50%, -50%); }
+.resize-handle.top-center { top: 0; left: 50%; cursor: ns-resize; transform: translate(-50%, -50%); }
+.resize-handle.top-right { top: 0; right: 0; left: auto; cursor: nesw-resize; transform: translate(50%, -50%); }
+.resize-handle.middle-left { top: 50%; left: 0; cursor: ew-resize; transform: translate(-50%, -50%); }
+.resize-handle.middle-right { top: 50%; right: 0; left: auto; cursor: ew-resize; transform: translate(50%, -50%); }
+.resize-handle.bottom-left { bottom: 0; top: auto; left: 0; cursor: nesw-resize; transform: translate(-50%, 50%); }
+.resize-handle.bottom-center { bottom: 0; top: auto; left: 50%; cursor: ns-resize; transform: translate(-50%, 50%); }
+.resize-handle.bottom-right { bottom: 0; top: auto; right: 0; left: auto; cursor: nwse-resize; transform: translate(50%, 50%); }
+
+/* Estilos para o conteúdo dentro do campo de preview */
+.field-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+.debug-info {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    font-size: 10px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 2px;
+    white-space: pre;
+    display: none; /* Mude para 'block' se precisar de ver os dados de debug */
+}
+
+.draggable-field.is-active .debug-info {
+    display: block;
+}

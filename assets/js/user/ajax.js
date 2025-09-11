@@ -5,11 +5,14 @@ const BCEK_User_Ajax = {
     },
 
     generateImage(format) {
-        const { loader, resultArea } = this.state.dom;
+        const { loader, resultArea, canvas } = this.state.dom; // Adicionado canvas
         const { nonce, ajax_url, template } = this.state.bcekData;
 
         loader.style.display = 'block';
         resultArea.innerHTML = '';
+
+        // NOVO: Converte o canvas do texto numa imagem base64
+        const textOverlayDataUrl = canvas.toDataURL('image/png');
 
         const dataToSend = {
             action: 'bcek_generate_image',
@@ -17,7 +20,9 @@ const BCEK_User_Ajax = {
             template_id: template.template_id,
             user_inputs: this.state.userInputs,
             user_filename: document.getElementById('bcek_filename').value,
-            format: format
+            format: format,
+            // NOVO: Envia a imagem do texto já renderizada
+            text_overlay_data_url: textOverlayDataUrl
         };
         
         jQuery.post(ajax_url, dataToSend)
