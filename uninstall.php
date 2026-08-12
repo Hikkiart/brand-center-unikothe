@@ -19,9 +19,9 @@ $table_fields = $wpdb->prefix . 'bcek_fields';
 $wpdb->query( "DROP TABLE IF EXISTS {$table_fields}" );
 $wpdb->query( "DROP TABLE IF EXISTS {$table_templates}" );
 
-// Deletar options (se houver alguma global)
-// delete_option( 'bcek_db_version' );
-// delete_option( 'bcek_settings' ); // Exemplo
+// Deletar options globais do plugin
+delete_option( 'bcek_db_version' );
+delete_option( 'bcek_settings' );
 
 // Nota: Imagens salvas na biblioteca de mídia NÃO são removidas por padrão,
 // pois podem estar sendo usadas em outros lugares. Isso é um comportamento comum.

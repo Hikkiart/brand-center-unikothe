@@ -1,0 +1,48 @@
+[2025-09-11 19:02:46]
+--- [DEBUG] Função delete_template_handler INICIADA ---
+
+[2025-09-11 19:02:46] --- Dados recebidos via POST ---
+Array
+(
+    [action] => bcek_delete_template
+    [template_id] => 59
+    [nonce] => 2379409d4d
+)
+
+
+[2025-09-11 19:02:46]
+SUCESSO: Nonce verificado.
+
+[2025-09-11 19:02:46]
+SUCESSO: Permissões do utilizador verificadas.
+
+[2025-09-11 19:02:46]
+A tentar apagar o template com ID: 59
+
+[2025-09-11 19:02:46]
+SUCESSO: Template 59 apagado da base de dados.
+
+[2025-09-11 19:03:58]
+--- [DEBUG] Função delete_template_handler INICIADA ---
+
+[2025-09-11 19:03:58] --- Dados recebidos via POST ---
+Array
+(
+    [action] => bcek_delete_template
+    [template_id] => 126
+    [nonce] => 2379409d4d
+)
+
+
+[2025-09-11 19:03:58]
+SUCESSO: Nonce verificado.
+
+[2025-09-11 19:03:58]
+SUCESSO: Permissões do utilizador verificadas.
+
+[2025-09-11 19:03:58]
+A tentar apagar o template com ID: 126
+
+[2025-09-11 19:03:58]
+SUCESSO: Template 126 apagado da base de dados.
+

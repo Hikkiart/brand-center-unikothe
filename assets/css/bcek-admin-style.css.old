@@ -1,0 +1,61 @@
+/* Estilos para a nova interface de administração baseada em Tailwind */
+.bcek-admin-container {
+    font-family: 'Poppins', sans-serif;
+}
+
+.custom-scrollbar::-webkit-scrollbar { width: 6px; }
+.custom-scrollbar::-webkit-scrollbar-track { background: #f1f5f9; }
+.custom-scrollbar::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 10px; }
+.custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #64748b; }
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.align-btn-group button.is-active {
+    background-color: #3B82F6;
+    color: white;
+}
+
+.accordion-item.is-dragging {
+    opacity: 0.5;
+    background: #e0f2fe;
+}
+
+.bcek-admin-container ul, .bcek-admin-container li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- ESTILOS PARA O NOVO DESIGN DOS CARTÕES DE TEMPLATE --- */
+
+.template-card-v2 {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    /* AJUSTE: Adiciona o contorno azul fino */
+    border: 2px solid transparent;
+}
+
+.template-card-v2:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    /* AJUSTE: Mostra o contorno azul no hover */
+    border-color: #3B82F6; /* Cor azul */
+}
+
+/* AJUSTE: Garante que a área do preview tenha a cor de fundo cinza se não houver imagem */
+.template-card-v2 .template-preview-area {
+    background-color: #f3f4f6; /* bg-gray-100 */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.template-card-v2 .template-preview-area {
+    aspect-ratio: 1 / 1; /* Força a proporção de 1:1 (quadrado) */
+}
